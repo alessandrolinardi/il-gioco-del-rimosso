@@ -1,0 +1,12 @@
+/*
+ * Font ospitati in locale (pacchetti @fontsource, licenza OFL): gli stessi pesi che
+ * l'originale caricava da Google Fonts. Solo il sottoinsieme latino, che copre
+ * tutti i caratteri usati nel gioco (accenti, «», –, −, ·).
+ */
+@import "@fontsource/gloock/latin-400.css";
+@import "@fontsource/instrument-sans/latin-400.css";
+@import "@fontsource/instrument-sans/latin-500.css";
+@import "@fontsource/instrument-sans/latin-600.css";
+@import "@fontsource/instrument-sans/latin-700.css";
+@import "@fontsource/jetbrains-mono/latin-500.css";
+@import "@fontsource/jetbrains-mono/latin-700.css";

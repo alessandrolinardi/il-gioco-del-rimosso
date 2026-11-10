@@ -1,0 +1,141 @@
+/* Stili originali di Il-Gioco-del-Rimosso.html, invariati. Le aggiunte per la webapp sono in app.css. */
+body{margin:0}[hidden]{display:none!important}img{max-width:100%}
+
+/* Layout: a study-room table — the card is the hero; tabs for Partita / Carte / Regole / Soluzioni */
+:root{
+  --bg:#e9ecf1; --surface:#f7f8fa; --card:#ffffff; --ink:#1b2130; --muted:#5a6273; --line:#d3d8e1;
+  --accent:#40367f; --accent-soft:#e4e1f3;
+  --easy:#2d7656; --mid:#94600a; --hard:#962b3b; --on-lvl:#ffffff;
+  --easy-soft:#e0efe7; --mid-soft:#f4ead6; --hard-soft:#f4e0e3;
+  --ok:#2d7656; --bad:#b02a3a;
+  --f-display:"Gloock", "Bodoni 72", Didot, Georgia, serif;
+  --f-body:"Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  --f-mono:"JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#12151c; --surface:#1a1e28; --card:#202532; --ink:#e7e9ef; --muted:#9aa2b3; --line:#323a4b;
+  --accent:#a99cf0; --accent-soft:#2c2850;
+  --easy:#62bb8f; --mid:#e0ab4c; --hard:#e57787; --on-lvl:#12151c;
+  --easy-soft:#1e3329; --mid-soft:#3a2f1a; --hard-soft:#3b2026;
+  --ok:#62bb8f; --bad:#ef7d8b; color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --bg:#12151c; --surface:#1a1e28; --card:#202532; --ink:#e7e9ef; --muted:#9aa2b3; --line:#323a4b;
+  --accent:#a99cf0; --accent-soft:#2c2850;
+  --easy:#62bb8f; --mid:#e0ab4c; --hard:#e57787; --on-lvl:#12151c;
+  --easy-soft:#1e3329; --mid-soft:#3a2f1a; --hard-soft:#3b2026;
+  --ok:#62bb8f; --bad:#ef7d8b; color-scheme:dark;}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.55}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));}
+header.top{padding-block:28px 0}
+.brand{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px}
+.brand h1{font-family:var(--f-display);font-weight:400;font-size:clamp(2.1rem,6vw,3.4rem);line-height:1;margin:0;letter-spacing:-.01em}
+.brand h1 s{text-decoration-thickness:3px;text-decoration-color:var(--hard)}
+.brand p{margin:0;color:var(--muted);max-width:44ch}
+.eyebrow{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+nav.tabs{display:flex;gap:4px;margin-top:22px;border-bottom:1px solid var(--line);overflow-x:auto}
+nav.tabs a{padding:10px 14px;text-decoration:none;color:var(--muted);font-weight:600;border-bottom:3px solid transparent;white-space:nowrap}
+nav.tabs a[aria-current="page"]{color:var(--ink);border-color:var(--accent)}
+nav.tabs a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+main{padding-block:28px 64px}
+section[hidden]{display:none}
+h2{font-family:var(--f-display);font-weight:400;font-size:1.9rem;margin:0 0 6px;text-wrap:balance}
+h3{font-size:1.05rem;margin:0 0 6px}
+.lead{color:var(--muted);margin:0 0 22px;max-width:65ch}
+
+/* ---------- Card ---------- */
+.l1{--lvl:var(--easy);--lvl-soft:var(--easy-soft)}
+.l2{--lvl:var(--mid);--lvl-soft:var(--mid-soft)}
+.l3{--lvl:var(--hard);--lvl-soft:var(--hard-soft)}
+.tcard{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 0 var(--line)}
+.tcard .band{background:var(--lvl);color:var(--on-lvl);display:flex;justify-content:space-between;align-items:center;padding:8px 14px;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700}
+.tcard .word{font-family:var(--f-display);font-size:1.6rem;line-height:1.1;text-align:center;padding:20px 14px 16px;color:var(--ink);text-wrap:balance;min-height:4.6rem;display:flex;align-items:center;justify-content:center;background:var(--lvl-soft);border-bottom:2px solid var(--lvl)}
+.tcard ul{list-style:none;margin:0;padding:14px 14px 10px;display:grid;gap:7px;text-align:center}
+.tcard li{font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:.86rem}
+.tcard .area{margin-top:auto;padding:8px 14px 12px;text-align:center;font-size:.72rem;color:var(--muted);font-family:var(--f-mono);letter-spacing:.06em;text-transform:uppercase}
+.tcard.big .word{font-size:clamp(2rem,6vw,2.8rem);min-height:8rem;padding:28px 18px}
+.tcard.big li{font-size:1.05rem;letter-spacing:.08em}
+.tcard.big ul{padding:20px 18px 14px;gap:10px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+
+/* ---------- Controls ---------- */
+button,.btn{font:inherit;font-weight:600;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:10px 18px;cursor:pointer}
+button:hover{border-color:var(--muted)}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.btn-ok{background:var(--ok);border-color:var(--ok);color:var(--on-lvl)}
+.btn-bad{background:var(--bad);border-color:var(--bad);color:var(--on-lvl)}
+:root .btn-ok,:root .btn-bad{color:#fff}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .btn-ok,:root:not([data-theme="light"]) .btn-bad{color:var(--on-lvl)}}
+:root[data-theme="dark"] .btn-ok,:root[data-theme="dark"] .btn-bad{color:var(--on-lvl)}
+.btn-big{padding:14px 22px;font-size:1.02rem}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+label.field{display:grid;gap:4px;font-size:.85rem;color:var(--muted);font-weight:600}
+input[type=text],input[type=number],input[type=search],select{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:9px 11px;min-width:0;width:100%}
+.chip{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:7px 14px;background:var(--card);cursor:pointer;font-weight:600;font-size:.88rem;user-select:none}
+.chip input{accent-color:var(--lvl,var(--accent))}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--lvl);display:inline-block;flex:none}
+
+/* ---------- Game ---------- */
+.game{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,380px);gap:28px;align-items:start}
+@media (max-width:820px){.game{grid-template-columns:1fr}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px}
+.setup{display:grid;gap:18px}
+.teams{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.scores{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-bottom:18px}
+.score{border:1px solid var(--line);border-radius:14px;padding:10px 14px;background:var(--card)}
+.score.on{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.score b{display:block;font-family:var(--f-mono);font-size:1.7rem;font-variant-numeric:tabular-nums;line-height:1.1}
+.score span{font-size:.85rem;color:var(--muted);font-weight:600}
+.stage{display:grid;gap:18px}
+.turnline{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}
+.turnline strong{font-family:var(--f-display);font-weight:400;font-size:1.6rem}
+.timer{display:flex;align-items:center;gap:16px}
+.timer svg{width:84px;height:84px;flex:none}
+.timer .num{font-family:var(--f-mono);font-size:2.2rem;font-weight:700;font-variant-numeric:tabular-nums}
+.timer.low .num{color:var(--bad)}
+.ring-bg{fill:none;stroke:var(--line);stroke-width:8}
+.ring{fill:none;stroke:var(--accent);stroke-width:8;stroke-linecap:round;transform:rotate(-90deg);transform-origin:50% 50%;transition:stroke-dashoffset .25s linear}
+.timer.low .ring{stroke:var(--bad)}
+.actions{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+@media (max-width:480px){.actions{grid-template-columns:1fr}}
+.cover{border:2px dashed var(--line);border-radius:18px;padding:40px 20px;text-align:center;color:var(--muted);background:var(--card)}
+.cover p{margin:6px auto 18px;max-width:40ch}
+.verdict{border-radius:14px;padding:14px 16px;font-weight:600}
+.verdict.ok{background:var(--easy-soft);color:var(--ink);border:1px solid var(--ok)}
+.verdict.bad{background:var(--hard-soft);color:var(--ink);border:1px solid var(--bad)}
+.verdict.neutral{background:var(--card);border:1px solid var(--line)}
+.explain{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.explain p{margin:4px 0 0}
+.note{font-size:.85rem;color:var(--muted)}
+.winner{text-align:center;padding:24px 10px}
+.winner strong{display:block;font-family:var(--f-display);font-weight:400;font-size:2.4rem;line-height:1.1;margin:6px 0 10px}
+.side{display:grid;gap:14px}
+.mini-rules{margin:0;padding-left:18px;display:grid;gap:6px;font-size:.92rem}
+
+/* ---------- Deck view ---------- */
+.filters{display:grid;grid-template-columns:auto minmax(0,220px) minmax(0,260px);gap:12px;align-items:end;margin-bottom:18px}
+@media (max-width:760px){.filters{grid-template-columns:1fr}}
+.count{font-family:var(--f-mono);font-size:.8rem;color:var(--muted);margin-bottom:12px}
+
+/* ---------- Rules ---------- */
+.rules{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px}
+@media (max-width:820px){.rules{grid-template-columns:1fr}}
+.rules ol,.rules ul{margin:8px 0 0;padding-left:20px;display:grid;gap:8px}
+table.pts{width:100%;border-collapse:collapse;font-size:.95rem}
+table.pts td,table.pts th{padding:9px 6px;border-bottom:1px solid var(--line);text-align:left}
+table.pts td.n{font-family:var(--f-mono);font-weight:700;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.legend{display:grid;gap:10px;margin-top:8px}
+.legend div{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start;padding:12px;border-radius:12px;background:var(--lvl-soft);border-left:6px solid var(--lvl)}
+.legend b{display:block}
+
+/* ---------- Solutions ---------- */
+.sol-group{margin-top:28px}
+.sol-group h3{display:flex;align-items:center;gap:10px;font-size:1.2rem;padding-bottom:8px;border-bottom:2px solid var(--lvl)}
+.sol{display:grid;grid-template-columns:3.2rem minmax(0,1fr);gap:4px 14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.sol .no{font-family:var(--f-mono);color:var(--lvl);font-weight:700;font-variant-numeric:tabular-nums}
+.sol h4{margin:0;font-family:var(--f-display);font-weight:400;font-size:1.25rem}
+.sol .meta{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.sol p{margin:4px 0 0;max-width:72ch}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}

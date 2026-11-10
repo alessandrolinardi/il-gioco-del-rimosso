@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Il Gioco del Rimosso</title>
+<meta name="description" content="Il gioco delle parole proibite della psicoanalisi: 100 carte su concetti, autori e meccanismi di difesa, con partita a squadre, regolamento e soluzioni commentate.">
+<meta name="theme-color" content="#e9ecf1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#12151c" media="(prefers-color-scheme: dark)">
+<script>
+  /* Applica il tema scelto prima del primo disegno, per evitare un lampo del tema sbagliato. */
+  try { var t = localStorage.getItem("rimosso-theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script type="module" src="/src/main.ts"></script>
+</head>
+<body>
+
+<header class="top wrap">
+  <div class="topbar">
+    <div class="eyebrow">Parole proibite della psicoanalisi · 100 carte</div>
+    <div class="prefs">
+      <button type="button" class="icon-btn" id="themeToggle"></button>
+      <button type="button" class="icon-btn" id="soundToggle"></button>
+    </div>
+  </div>
+  <div class="brand">
+    <div>
+      <h1>Il Gioco del <s>Rimosso</s></h1>
+    </div>
+    <p>Fai indovinare concetti, autori e meccanismi di difesa senza pronunciare le parole proibite. Ciò che non si può dire, si dice in un altro modo.</p>
+  </div>
+  <nav class="tabs" aria-label="Sezioni">
+    <a href="#partita" data-view="partita">Partita</a>
+    <a href="#carte" data-view="carte">Le 100 carte</a>
+    <a href="#regole" data-view="regole">Regolamento</a>
+    <a href="#soluzioni" data-view="soluzioni">Soluzioni</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <!-- PARTITA -->
+  <section id="v-partita" data-view="partita">
+    <div class="game">
+      <div id="gameMain"></div>
+      <aside class="side" id="gameSide"></aside>
+    </div>
+  </section>
+
+  <!-- CARTE -->
+  <section id="v-carte" data-view="carte" hidden>
+    <h2>Le 100 carte</h2>
+    <p class="lead">30 facili, 40 intermedie, 30 difficili, distribuite su otto aree della teoria psicoanalitica. Il colore della fascia indica il livello.</p>
+    <div class="filters">
+      <div class="row" id="lvlFilter">
+        <label class="chip l1"><input type="checkbox" id="fl1" value="1" checked> Facile</label>
+        <label class="chip l2"><input type="checkbox" id="fl2" value="2" checked> Intermedio</label>
+        <label class="chip l3"><input type="checkbox" id="fl3" value="3" checked> Difficile</label>
+      </div>
+      <label class="field">Area<select id="fArea"><option value="">Tutte le aree</option></select></label>
+      <label class="field">Cerca<input type="search" id="fq" placeholder="Parola o parola vietata"></label>
+    </div>
+    <div class="count" id="deckCount"></div>
+    <div class="grid" id="deck"></div>
+  </section>
+
+  <!-- REGOLE -->
+  <section id="v-regole" data-view="regole" hidden>
+    <h2>Regolamento</h2>
+    <p class="lead">Per 4–12 giocatori divisi in due o più squadre. Serve solo questa pagina, aperta su un telefono o un portatile che passa di mano in mano.</p>
+    <div class="rules">
+      <div class="panel">
+        <h3>Come si gioca</h3>
+        <ol>
+          <li>Formate <b>due o più squadre</b> di almeno due giocatori e scegliete i livelli di difficoltà da mettere nel mazzo.</li>
+          <li>A ogni turno una squadra sceglie un <b>descrittore</b>. Un giocatore di una squadra avversaria fa da <b>controllore</b> e guarda la carta insieme a lui.</li>
+          <li>Il descrittore ha <b>60 secondi</b> per far indovinare alla propria squadra la parola in cima alla carta.</li>
+          <li>È <b>vietato pronunciare</b> le parole proibite elencate sotto, anche al singolare, al plurale o in forme derivate.</li>
+          <li>È vietato usare <b>parti della parola</b> da indovinare, traduzioni dirette (Id, Ego, Verdrängung…), iniziali, rime («fa rima con…»), gesti e mimica.</li>
+          <li>Sono ammessi esempi clinici, opere, date e riferimenti ad altri concetti, purché non siano parole vietate.</li>
+          <li>Se il descrittore dice una parola vietata, il controllore preme <b>Tabù!</b>: la carta è persa e scatta la penalità.</li>
+          <li>Indovinata, tabù, passo o tempo scaduto: il turno passa alla squadra successiva con una nuova carta.</li>
+          <li>Dopo ogni carta leggete insieme la scheda <b>Per approfondire</b>: è lì che il gioco diventa ripasso.</li>
+        </ol>
+      </div>
+      <div class="side">
+        <div class="panel">
+          <h3>Sistema di punteggio</h3>
+          <table class="pts">
+            <tr><td>Parola indovinata entro 60 secondi</td><td class="n">+1</td></tr>
+            <tr><td>Parola vietata pronunciata (tabù)</td><td class="n">−1</td></tr>
+            <tr><td>Uso di parte della parola, traduzione o gesto</td><td class="n">−1</td></tr>
+            <tr><td>Passo o tempo scaduto</td><td class="n">0</td></tr>
+          </table>
+          <p class="note">Vince la prima squadra che raggiunge il punteggio obiettivo (15 di default) alla fine di un giro completo, così ogni squadra gioca lo stesso numero di carte. In caso di parità si gioca un altro giro. Se il mazzo finisce prima, vince chi ha più punti.</p>
+          <p class="note"><b>Variante «punteggio pesato»</b> (attivabile nella partita): facile +1, intermedia +2, difficile +3. La penalità resta −1.</p>
+        </div>
+        <div class="panel">
+          <h3>Legenda dei livelli</h3>
+          <div class="legend">
+            <div class="l1"><span class="dot"></span><span><b>Facile · carte 1–30</b>Concetti fondamentali e molto noti: le istanze, le difese di base, i grandi nomi.</span></div>
+            <div class="l2"><span class="dot"></span><span><b>Intermedio · carte 31–70</b>Richiedono una buona conoscenza della teoria: lavoro onirico, difese ossessive, tecnica, casi clinici.</span></div>
+            <div class="l3"><span class="dot"></span><span><b>Difficile · carte 71–100</b>Concetti specifici delle scuole post-freudiane (Klein, Winnicott, Bion, Lacan, Kohut, Jung) e nozioni freudiane sottili.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUZIONI -->
+  <section id="v-soluzioni" data-view="soluzioni" hidden>
+    <h2>Soluzioni e approfondimenti</h2>
+    <p class="lead">Una breve scheda teorica per ogni carta, con autore e opera di riferimento dove pertinente. Utile per discutere dopo ogni partita.</p>
+    <div id="sols"></div>
+  </section>
+</main>
+
+</body>
+</html>

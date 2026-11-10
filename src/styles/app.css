@@ -1,0 +1,25 @@
+/* Aggiunte della webapp allo stile originale (main.css). */
+
+body{-webkit-tap-highlight-color:transparent}
+button,.chip,nav.tabs a{touch-action:manipulation}
+
+/* ---------- Barra in alto: tema e suono ---------- */
+header.top{padding-top:max(28px, env(safe-area-inset-top, 0px))}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:6px}
+.topbar .eyebrow{min-width:0}
+.prefs{display:flex;gap:6px;flex:none}
+.icon-btn{display:inline-grid;place-items:center;width:40px;height:40px;padding:0;border-radius:50%;color:var(--muted)}
+.icon-btn:hover{color:var(--ink)}
+.icon-btn[aria-pressed="false"]{opacity:.75}
+
+/* ---------- Turno: pulsanti grandi per il telefono ---------- */
+#gameMain{scroll-margin-top:12px}
+.actions .btn-big{min-height:64px;font-size:1.12rem}
+@media (max-width:480px){
+  .actions{grid-template-columns:1fr 1fr}
+  .actions [data-r="ok"]{grid-column:1 / -1;min-height:76px;font-size:1.25rem}
+  .cover .btn-big{width:100%;min-height:60px}
+  .tcard.big .word{min-height:6rem;padding:20px 14px}
+  .tcard.big ul{padding:14px 14px 10px;gap:8px}
+}
+main{padding-bottom:max(64px, calc(env(safe-area-inset-bottom, 0px) + 32px))}
