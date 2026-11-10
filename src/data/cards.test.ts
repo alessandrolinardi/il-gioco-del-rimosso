@@ -17,14 +17,28 @@ describe("cards.json", () => {
     });
   });
 
-  it("ogni carta ha parola, quattro parole vietate, un'area nota e una spiegazione", () => {
+  it("ogni carta ha parola, 4 o 5 parole vietate diverse, un'area nota e una spiegazione", () => {
     for (const c of CARDS) {
       expect(c.parola.trim()).not.toBe("");
-      expect(c.vietate).toHaveLength(4);
+      expect(c.vietate.length).toBeGreaterThanOrEqual(4);
+      expect(c.vietate.length).toBeLessThanOrEqual(5);
+      expect(new Set(c.vietate).size).toBe(c.vietate.length);
       c.vietate.forEach((v) => expect(v.trim()).not.toBe(""));
       expect(AREAS).toContain(c.area);
       expect(c.spiegazione.length).toBeGreaterThan(40);
     }
+  });
+
+  it("tra le parole vietate c'è sempre l'autore del concetto (tranne nelle carte che sono autori)", () => {
+    const AUTHORS = [
+      "Freud", "Anna Freud", "Jones", "Breuer", "Charcot", "Ferenczi", "Heimann", "Zetzel", "Greenson",
+      "Klein", "Isaacs", "Bion", "Winnicott", "Bowlby", "Ainsworth", "Kohut", "Lacan", "Jung", "Hartmann",
+    ];
+    const PERSON_CARDS = [27, 28, 29, 30, 59, 60, 61, 62, 63, 64];
+    const missing = CARDS.filter(
+      (c) => !PERSON_CARDS.includes(c.id) && !c.vietate.some((v) => AUTHORS.includes(v)),
+    ).map((c) => `${c.id} ${c.parola}`);
+    expect(missing).toEqual([]);
   });
 
   it("usa tutte e otto le aree", () => {

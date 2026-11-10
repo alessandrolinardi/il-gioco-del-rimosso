@@ -10,7 +10,7 @@
   {
     "id": 2,
     "parola": "Transfert",
-    "vietate": ["Analista", "Paziente", "Proiezione", "Relazione"],
+    "vietate": ["Analista", "Paziente", "Proiezione", "Relazione", "Freud"],
     "livello": 1,
     "area": "Relazione terapeutica",
     "spiegazione": "Processo per cui desideri, affetti e modelli relazionali infantili si attualizzano sulla persona dell'analista. Freud lo incontra prima come ostacolo (caso Dora, 1905) e ne fa poi il terreno principale della cura."
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "parola": "Es",
-    "vietate": ["Pulsioni", "Istinto", "Piacere", "Id"],
+    "vietate": ["Pulsioni", "Istinto", "Piacere", "Id", "Freud"],
     "livello": 1,
     "area": "Concetti freudiani",
     "spiegazione": "Istanza della seconda topica (L'Io e l'Es, 1923), termine ripreso da Georg Groddeck. È il polo pulsionale della personalità, inconscio, governato dal principio di piacere e dal processo primario."
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "parola": "Io",
-    "vietate": ["Ego", "Realtà", "Mediatore", "Difese"],
+    "vietate": ["Ego", "Realtà", "Mediatore", "Difese", "Freud"],
     "livello": 1,
     "area": "Concetti freudiani",
     "spiegazione": "Istanza della seconda topica che media tra le richieste dell'Es, i divieti del Super-Io e le esigenze della realtà. Opera secondo il principio di realtà ed è la sede dei meccanismi di difesa, in larga parte inconsci."
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "parola": "Super-Io",
-    "vietate": ["Morale", "Colpa", "Coscienza", "Divieti"],
+    "vietate": ["Morale", "Colpa", "Coscienza", "Divieti", "Freud"],
     "livello": 1,
     "area": "Concetti freudiani",
     "spiegazione": "Istanza critica della seconda topica, definita da Freud «erede del complesso edipico»: si forma per interiorizzazione delle esigenze e dei divieti dei genitori. Comprende coscienza morale, auto-osservazione e funzione di ideale."
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "parola": "Libido",
-    "vietate": ["Energia", "Sessuale", "Desiderio", "Eros"],
+    "vietate": ["Energia", "Sessuale", "Desiderio", "Eros", "Freud"],
     "livello": 1,
     "area": "Concetti freudiani",
     "spiegazione": "Energia della pulsione sessuale, intesa da Freud come grandezza quantitativa che può investire gli oggetti o l'Io (libido oggettuale e narcisistica). Jung la estende a energia psichica in generale: è uno dei punti della rottura tra i due nel 1912–13."
@@ -50,7 +50,7 @@
   {
     "id": 7,
     "parola": "Rimozione",
-    "vietate": ["Dimenticare", "Inconscio", "Ricordo", "Spingere"],
+    "vietate": ["Dimenticare", "Inconscio", "Ricordo", "Spingere", "Freud"],
     "livello": 1,
     "area": "Concetti freudiani",
     "spiegazione": "Operazione con cui il soggetto respinge o mantiene nell'inconscio rappresentazioni legate a una pulsione il cui soddisfacimento provocherebbe dispiacere. Per Freud (1914) la dottrina della rimozione è «il pilastro su cui poggia l'edificio della psicoanalisi»."
@@ -58,7 +58,7 @@
   {
     "id": 8,
     "parola": "Sublimazione",
-    "vietate": ["Arte", "Cultura", "Creatività", "Deviare"],
+    "vietate": ["Arte", "Cultura", "Creatività", "Deviare", "Freud"],
     "livello": 1,
     "area": "Concetti freudiani",
     "spiegazione": "Processo per cui la pulsione sessuale è deviata verso una meta non sessuale e verso oggetti socialmente valorizzati, come l'attività artistica e la ricerca intellettuale. Freud non ne diede mai una teoria compiuta; Anna Freud la include tra i meccanismi di difesa."
@@ -66,7 +66,7 @@
   {
     "id": 9,
     "parola": "Pulsione",
-    "vietate": ["Istinto", "Spinta", "Meta", "Oggetto"],
+    "vietate": ["Istinto", "Spinta", "Meta", "Oggetto", "Freud"],
     "livello": 1,
     "area": "Concetti freudiani",
     "spiegazione": "Processo dinamico che consiste in una spinta (carica energetica) che fa tendere l'organismo verso una meta. In Pulsioni e loro destini (1915) Freud ne distingue spinta, meta, oggetto e fonte. Va distinta dall'istinto animale, schema di comportamento ereditario e fisso."
@@ -74,7 +74,7 @@
   {
     "id": 10,
     "parola": "Principio di piacere",
-    "vietate": ["Soddisfazione", "Dispiacere", "Es", "Realtà"],
+    "vietate": ["Soddisfazione", "Dispiacere", "Es", "Realtà", "Freud"],
     "livello": 1,
     "area": "Concetti freudiani",
     "spiegazione": "Uno dei due principi che regolano il funzionamento mentale (1911): l'attività psichica tende a evitare il dispiacere e a procurare piacere attraverso la scarica immediata della tensione. Domina l'Es e il processo primario."
@@ -82,7 +82,7 @@
   {
     "id": 11,
     "parola": "Proiezione",
-    "vietate": ["Attribuire", "Altri", "Esterno", "Rifiutare"],
+    "vietate": ["Attribuire", "Altri", "Esterno", "Rifiutare", "Freud"],
     "livello": 1,
     "area": "Meccanismi di difesa",
     "spiegazione": "Operazione con cui il soggetto espelle da sé e colloca nell'altro, persona o cosa, qualità, sentimenti o desideri che misconosce o rifiuta in sé. Per Freud ha un ruolo centrale nella paranoia (caso Schreber, 1911)."
@@ -90,7 +90,7 @@
   {
     "id": 12,
     "parola": "Negazione",
-    "vietate": ["No", "Rifiutare", "Ammettere", "Realtà"],
+    "vietate": ["No", "Rifiutare", "Ammettere", "Realtà", "Freud"],
     "livello": 1,
     "area": "Meccanismi di difesa",
     "spiegazione": "In senso freudiano (Verneinung, 1925) è il procedimento con cui il soggetto formula un pensiero rimosso negando che gli appartenga («Non è mia madre»): il rimosso arriva alla coscienza a patto di essere negato. Nelle classificazioni correnti delle difese il termine indica anche il rifiuto di riconoscere una realtà dolorosa, che Freud chiama più precisamente diniego (carta 43)."
@@ -98,7 +98,7 @@
   {
     "id": 13,
     "parola": "Razionalizzazione",
-    "vietate": ["Giustificazione", "Logica", "Scusa", "Motivi"],
+    "vietate": ["Giustificazione", "Logica", "Scusa", "Motivi", "Jones"],
     "livello": 1,
     "area": "Meccanismi di difesa",
     "spiegazione": "Procedimento con cui il soggetto dà una spiegazione coerente e moralmente accettabile di un comportamento, di un sentimento o di un sintomo i cui veri motivi gli sfuggono. Il termine fu introdotto da Ernest Jones nel 1908."
@@ -106,7 +106,7 @@
   {
     "id": 14,
     "parola": "Regressione",
-    "vietate": ["Tornare", "Infanzia", "Indietro", "Fase"],
+    "vietate": ["Tornare", "Infanzia", "Indietro", "Fase", "Freud"],
     "livello": 1,
     "area": "Meccanismi di difesa",
     "spiegazione": "Ritorno a modalità di funzionamento anteriori. Freud distingue regressione topica (verso il polo percettivo, come nel sogno), temporale (a fasi libidiche precedenti, dove esistono fissazioni) e formale (a modi di espressione più primitivi)."
@@ -122,7 +122,7 @@
   {
     "id": 16,
     "parola": "Lapsus",
-    "vietate": ["Errore", "Parola", "Sbaglio", "Freudiano"],
+    "vietate": ["Errore", "Parola", "Sbaglio", "Freudiano", "Freud"],
     "livello": 1,
     "area": "Sogni e inconscio",
     "spiegazione": "Atto mancato verbale (lapsus linguae) o di scrittura (lapsus calami): si dice o si scrive una parola al posto di un'altra. In Psicopatologia della vita quotidiana (1901) Freud lo interpreta come compromesso tra un'intenzione cosciente e un desiderio che la disturba."
@@ -130,7 +130,7 @@
   {
     "id": 17,
     "parola": "Contenuto manifesto",
-    "vietate": ["Sogno", "Racconto", "Latente", "Visibile"],
+    "vietate": ["Sogno", "Racconto", "Latente", "Visibile", "Freud"],
     "livello": 1,
     "area": "Sogni e inconscio",
     "spiegazione": "Il sogno come si presenta al sognatore e come viene raccontato al risveglio. È il prodotto del lavoro onirico, che ha trasformato e deformato i pensieri latenti; l'interpretazione procede a ritroso, dal manifesto al latente."
@@ -138,7 +138,7 @@
   {
     "id": 18,
     "parola": "Libera associazione",
-    "vietate": ["Regola fondamentale", "Pensieri", "Dire tutto", "Censura"],
+    "vietate": ["Regola fondamentale", "Pensieri", "Dire tutto", "Censura", "Freud"],
     "livello": 1,
     "area": "Relazione terapeutica",
     "spiegazione": "Metodo che consiste nell'esprimere senza scelta né censura tutti i pensieri che vengono in mente. Freud lo sostituì gradualmente all'ipnosi e alla tecnica della pressione negli anni Novanta dell'Ottocento; la consegna di seguirlo è detta «regola fondamentale»."
@@ -146,7 +146,7 @@
   {
     "id": 19,
     "parola": "Resistenza",
-    "vietate": ["Opporsi", "Ostacolo", "Difesa", "Cura"],
+    "vietate": ["Opporsi", "Ostacolo", "Difesa", "Cura", "Freud"],
     "livello": 1,
     "area": "Relazione terapeutica",
     "spiegazione": "Tutto ciò che, nelle parole e nelle azioni del paziente, si oppone all'accesso all'inconscio. In Inibizione, sintomo e angoscia (1926) Freud ne distingue cinque forme: tre dell'Io (rimozione, transfert, beneficio secondario), una dell'Es (coazione a ripetere) e una del Super-Io (bisogno di punizione)."
@@ -154,7 +154,7 @@
   {
     "id": 20,
     "parola": "Interpretazione",
-    "vietate": ["Significato", "Spiegare", "Analista", "Insight"],
+    "vietate": ["Significato", "Spiegare", "Analista", "Insight", "Freud"],
     "livello": 1,
     "area": "Relazione terapeutica",
     "spiegazione": "Intervento con cui l'analista porta alla luce il senso latente di parole e comportamenti del paziente, facendo emergere il desiderio inconscio e il conflitto difensivo. Può riguardare contenuti, resistenze e transfert."
@@ -162,7 +162,7 @@
   {
     "id": 21,
     "parola": "Nevrosi",
-    "vietate": ["Sintomo", "Conflitto", "Ansia", "Psicosi"],
+    "vietate": ["Sintomo", "Conflitto", "Ansia", "Psicosi", "Freud"],
     "livello": 1,
     "area": "Psicopatologia",
     "spiegazione": "Affezione psicogena in cui i sintomi sono l'espressione simbolica di un conflitto psichico radicato nella storia infantile e costituiscono formazioni di compromesso tra desiderio e difesa. Le psiconevrosi classiche sono isteria, nevrosi ossessiva e fobia."
@@ -178,7 +178,7 @@
   {
     "id": 23,
     "parola": "Angoscia",
-    "vietate": ["Paura", "Ansia", "Pericolo", "Segnale"],
+    "vietate": ["Paura", "Ansia", "Pericolo", "Segnale", "Freud"],
     "livello": 1,
     "area": "Psicopatologia",
     "spiegazione": "Reazione affettiva a una situazione di pericolo. Nella prima teoria Freud la considera libido trasformata; in Inibizione, sintomo e angoscia (1926) diventa il segnale che l'Io emette di fronte a un pericolo interno, mettendo in moto le difese."
@@ -186,7 +186,7 @@
   {
     "id": 24,
     "parola": "Complesso di Edipo",
-    "vietate": ["Madre", "Padre", "Sofocle", "Rivalità"],
+    "vietate": ["Madre", "Padre", "Sofocle", "Rivalità", "Freud"],
     "livello": 1,
     "area": "Infanzia e sviluppo",
     "spiegazione": "Insieme organizzato di desideri amorosi e ostili del bambino verso i genitori: nella forma positiva, desiderio per il genitore di sesso opposto e rivalità con quello dello stesso sesso. Culmina tra i 3 e i 5 anni, nella fase fallica; dal suo tramonto nasce il Super-Io."
@@ -194,7 +194,7 @@
   {
     "id": 25,
     "parola": "Fase orale",
-    "vietate": ["Bocca", "Seno", "Allattamento", "Succhiare"],
+    "vietate": ["Bocca", "Seno", "Allattamento", "Succhiare", "Freud"],
     "livello": 1,
     "area": "Infanzia e sviluppo",
     "spiegazione": "Primo stadio dello sviluppo libidico (circa il primo anno): la zona erogena è la bocca e il piacere è legato all'alimentazione. Karl Abraham vi distingue una fase precoce di suzione e una fase sadico-orale, contemporanea alla comparsa dei denti."
@@ -202,7 +202,7 @@
   {
     "id": 26,
     "parola": "Fase anale",
-    "vietate": ["Feci", "Controllo", "Trattenere", "Vasino"],
+    "vietate": ["Feci", "Controllo", "Trattenere", "Vasino", "Freud"],
     "livello": 1,
     "area": "Infanzia e sviluppo",
     "spiegazione": "Secondo stadio dello sviluppo libidico (circa 2–3 anni): la zona erogena è la mucosa anale e la relazione è organizzata intorno a trattenere ed espellere. Vi dominano ambivalenza e sadismo; Freud la collega al carattere anale: ordine, parsimonia, ostinazione (1908)."
@@ -242,7 +242,7 @@
   {
     "id": 31,
     "parola": "Preconscio",
-    "vietate": ["Accessibile", "Ricordare", "Topica", "Censura"],
+    "vietate": ["Accessibile", "Ricordare", "Topica", "Censura", "Freud"],
     "livello": 2,
     "area": "Concetti freudiani",
     "spiegazione": "Sistema della prima topica i cui contenuti non sono presenti nella coscienza ma le sono accessibili, come i ricordi che si possono richiamare a volontà. È separato dall'inconscio da una censura."
@@ -250,7 +250,7 @@
   {
     "id": 32,
     "parola": "Conscio",
-    "vietate": ["Consapevolezza", "Percezione", "Attenzione", "Topica"],
+    "vietate": ["Consapevolezza", "Percezione", "Attenzione", "Topica", "Freud"],
     "livello": 2,
     "area": "Concetti freudiani",
     "spiegazione": "Sistema della prima topica (Percezione-Coscienza) che riceve informazioni dal mondo esterno e interno. Per Freud la coscienza è una qualità transitoria dei processi psichici, non la loro essenza: gran parte della vita mentale si svolge senza di essa."
@@ -258,7 +258,7 @@
   {
     "id": 33,
     "parola": "Principio di realtà",
-    "vietate": ["Piacere", "Rinvio", "Adattamento", "Io"],
+    "vietate": ["Piacere", "Rinvio", "Adattamento", "Io", "Freud"],
     "livello": 2,
     "area": "Concetti freudiani",
     "spiegazione": "Forma coppia con il principio di piacere (Precisazioni sui due principi dell'accadere psichico, 1911) e lo modifica: la ricerca della soddisfazione passa per deviazioni e rinvii imposti dalle condizioni del mondo esterno."
@@ -266,7 +266,7 @@
   {
     "id": 34,
     "parola": "Coazione a ripetere",
-    "vietate": ["Fort-da", "Trauma", "Destino", "Compulsione"],
+    "vietate": ["Fort-da", "Trauma", "Destino", "Compulsione", "Freud"],
     "livello": 2,
     "area": "Concetti freudiani",
     "spiegazione": "Tendenza inconscia a riprodurre esperienze dolorose del passato, anche contro il principio di piacere. In Al di là del principio di piacere (1920) Freud la osserva nei sogni traumatici, nel transfert e nel gioco del rocchetto del nipote (fort-da) e la collega alla pulsione di morte."
@@ -274,7 +274,7 @@
   {
     "id": 35,
     "parola": "Pulsione di morte",
-    "vietate": ["Thanatos", "Eros", "Distruzione", "Inorganico"],
+    "vietate": ["Thanatos", "Eros", "Distruzione", "Inorganico", "Freud"],
     "livello": 2,
     "area": "Concetti freudiani",
     "spiegazione": "Introdotta in Al di là del principio di piacere (1920): tendenza a ridurre completamente le tensioni e a riportare il vivente allo stato inorganico. Si oppone alle pulsioni di vita (Eros) e, rivolta all'esterno, si manifesta come aggressività."
@@ -282,7 +282,7 @@
   {
     "id": 36,
     "parola": "Narcisismo",
-    "vietate": ["Specchio", "Mito", "Autostima", "Investimento"],
+    "vietate": ["Specchio", "Mito", "Autostima", "Investimento", "Freud"],
     "livello": 2,
     "area": "Concetti freudiani",
     "spiegazione": "Investimento libidico del proprio Io. In Introduzione al narcisismo (1914) Freud distingue un narcisismo primario, stato precoce in cui il bambino investe sé stesso, e uno secondario, in cui la libido ritirata dagli oggetti ritorna sull'Io."
@@ -290,7 +290,7 @@
   {
     "id": 37,
     "parola": "Formazione reattiva",
-    "vietate": ["Opposto", "Contrario", "Eccesso", "Esagerato"],
+    "vietate": ["Opposto", "Contrario", "Eccesso", "Esagerato", "Freud"],
     "livello": 2,
     "area": "Meccanismi di difesa",
     "spiegazione": "Atteggiamento di senso opposto a un desiderio rimosso, costituitosi come reazione contro di esso: pudore contro esibizionismo, eccesso di pulizia contro tendenze anali. Tipica della nevrosi ossessiva, tende a fissarsi in tratto di carattere."
@@ -298,7 +298,7 @@
   {
     "id": 38,
     "parola": "Spostamento",
-    "vietate": ["Accento", "Sostituto", "Intensità", "Dettaglio"],
+    "vietate": ["Accento", "Sostituto", "Intensità", "Dettaglio", "Freud"],
     "livello": 2,
     "area": "Sogni e inconscio",
     "spiegazione": "Meccanismo del lavoro onirico: l'accento e l'intensità di una rappresentazione si staccano da essa e passano ad altre poco importanti, legate alla prima da catene associative. Per questo un dettaglio marginale del sogno può essere il più significativo. Opera anche nella formazione dei sintomi fobici."
@@ -306,7 +306,7 @@
   {
     "id": 39,
     "parola": "Isolamento",
-    "vietate": ["Affetto", "Separare", "Ossessivo", "Freddezza"],
+    "vietate": ["Affetto", "Separare", "Ossessivo", "Freddezza", "Freud"],
     "livello": 2,
     "area": "Meccanismi di difesa",
     "spiegazione": "Meccanismo tipico della nevrosi ossessiva: un pensiero o un comportamento viene separato dal suo affetto o dalle sue connessioni con altri pensieri, per esempio con pause o rituali. Il ricordo resta presente ma privo di carica emotiva."
@@ -314,7 +314,7 @@
   {
     "id": 40,
     "parola": "Identificazione",
-    "vietate": ["Imitare", "Modello", "Assimilare", "Somigliare"],
+    "vietate": ["Imitare", "Modello", "Assimilare", "Somigliare", "Freud"],
     "livello": 2,
     "area": "Meccanismi di difesa",
     "spiegazione": "Processo con cui un soggetto assimila un aspetto, una proprietà o un attributo dell'altro e si trasforma, totalmente o parzialmente, sul suo modello. Per Freud è l'operazione attraverso cui si costituiscono l'Io e il Super-Io."
@@ -330,7 +330,7 @@
   {
     "id": 42,
     "parola": "Annullamento retroattivo",
-    "vietate": ["Disfare", "Rituale", "Cancellare", "Magico"],
+    "vietate": ["Disfare", "Rituale", "Cancellare", "Magico", "Freud"],
     "livello": 2,
     "area": "Meccanismi di difesa",
     "spiegazione": "Meccanismo tipico della nevrosi ossessiva: il soggetto si sforza di far sì che pensieri, parole o gesti passati non siano accaduti, compiendo un pensiero o un'azione di senso opposto. Ha un carattere magico ed è all'origine di molti rituali ossessivi."
@@ -338,7 +338,7 @@
   {
     "id": 43,
     "parola": "Diniego",
-    "vietate": ["Realtà", "Percezione", "Feticismo", "Castrazione"],
+    "vietate": ["Realtà", "Percezione", "Feticismo", "Castrazione", "Freud"],
     "livello": 2,
     "area": "Meccanismi di difesa",
     "spiegazione": "Rifiuto di riconoscere la realtà di una percezione traumatica (Verleugnung). Freud lo descrive a proposito della percezione dell'assenza del pene nella donna e ne fa il meccanismo centrale del feticismo; si accompagna a una scissione dell'Io."
@@ -346,7 +346,7 @@
   {
     "id": 44,
     "parola": "Condensazione",
-    "vietate": ["Fusione", "Sovradeterminazione", "Unire", "Comprimere"],
+    "vietate": ["Fusione", "Sovradeterminazione", "Unire", "Comprimere", "Freud"],
     "livello": 2,
     "area": "Sogni e inconscio",
     "spiegazione": "Meccanismo del lavoro onirico per cui un'unica rappresentazione (una persona, un'immagine, una parola) rappresenta da sola più catene associative. Spiega perché il sogno manifesto è molto più breve dei pensieri latenti e perché ogni suo elemento è sovradeterminato."
@@ -354,7 +354,7 @@
   {
     "id": 45,
     "parola": "Contenuto latente",
-    "vietate": ["Nascosto", "Manifesto", "Pensieri", "Sogno"],
+    "vietate": ["Nascosto", "Manifesto", "Pensieri", "Sogno", "Freud"],
     "livello": 2,
     "area": "Sogni e inconscio",
     "spiegazione": "Insieme dei pensieri e dei desideri inconsci che il sogno esprime in forma deformata e che l'interpretazione ricostruisce a partire dalle associazioni del sognatore. Comprende resti diurni, ricordi infantili e il desiderio rimosso."
@@ -362,7 +362,7 @@
   {
     "id": 46,
     "parola": "Lavoro onirico",
-    "vietate": ["Condensazione", "Spostamento", "Trasformazione", "Sogno"],
+    "vietate": ["Condensazione", "Spostamento", "Trasformazione", "Sogno", "Freud"],
     "livello": 2,
     "area": "Sogni e inconscio",
     "spiegazione": "Insieme delle operazioni che trasformano i pensieri latenti nel contenuto manifesto: condensazione, spostamento, considerazione della raffigurabilità ed elaborazione secondaria. Per Freud l'essenza del sogno sta in questo lavoro, non nel contenuto latente."
@@ -370,7 +370,7 @@
   {
     "id": 47,
     "parola": "Censura",
-    "vietate": ["Guardiano", "Deformazione", "Barriera", "Proibito"],
+    "vietate": ["Guardiano", "Deformazione", "Barriera", "Proibito", "Freud"],
     "livello": 2,
     "area": "Sogni e inconscio",
     "spiegazione": "Funzione che impedisce ai desideri inconsci e alle formazioni che ne derivano di accedere al sistema preconscio-conscio. È responsabile della deformazione del sogno; Freud la paragona alla censura politica sulla stampa."
@@ -378,7 +378,7 @@
   {
     "id": 48,
     "parola": "Resti diurni",
-    "vietate": ["Giorno", "Veglia", "Ieri", "Materiale"],
+    "vietate": ["Giorno", "Veglia", "Ieri", "Materiale", "Freud"],
     "livello": 2,
     "area": "Sogni e inconscio",
     "spiegazione": "Elementi delle esperienze e dei pensieri della veglia del giorno precedente che compaiono nel sogno. Fanno da materiale e da occasione: il desiderio inconscio vi si aggancia per trovare espressione."
@@ -386,7 +386,7 @@
   {
     "id": 49,
     "parola": "Controtransfert",
-    "vietate": ["Analista", "Reazioni", "Emozioni", "Heimann"],
+    "vietate": ["Analista", "Reazioni", "Emozioni", "Heimann", "Freud"],
     "livello": 2,
     "area": "Relazione terapeutica",
     "spiegazione": "Insieme delle reazioni inconsce dell'analista alla persona del paziente e in particolare al suo transfert. Per Freud (1910) era un ostacolo da superare con l'autoanalisi; dopo Paula Heimann (1950) diventa anche uno strumento per comprendere il paziente."
@@ -394,7 +394,7 @@
   {
     "id": 50,
     "parola": "Alleanza terapeutica",
-    "vietate": ["Collaborazione", "Patto", "Greenson", "Fiducia"],
+    "vietate": ["Collaborazione", "Patto", "Greenson", "Fiducia", "Zetzel"],
     "livello": 2,
     "area": "Relazione terapeutica",
     "spiegazione": "Relazione razionale e collaborativa tra paziente e analista, distinta dal transfert, che rende possibile il lavoro analitico. Il concetto è sviluppato da Elizabeth Zetzel (1956) e da Ralph Greenson (1965), che parla di «alleanza di lavoro»."
@@ -402,7 +402,7 @@
   {
     "id": 51,
     "parola": "Setting",
-    "vietate": ["Cornice", "Orari", "Regole", "Lettino"],
+    "vietate": ["Cornice", "Orari", "Regole", "Lettino", "Freud"],
     "livello": 2,
     "area": "Relazione terapeutica",
     "spiegazione": "Insieme delle condizioni costanti dell'analisi: frequenza e durata delle sedute, onorario, uso del lettino, regola fondamentale, astinenza dell'analista. La sua stabilità è la cornice in cui transfert e regressione possono manifestarsi."
@@ -410,7 +410,7 @@
   {
     "id": 52,
     "parola": "Attenzione fluttuante",
-    "vietate": ["Ascolto", "Sospesa", "Uniforme", "Selezione"],
+    "vietate": ["Ascolto", "Sospesa", "Uniforme", "Selezione", "Freud"],
     "livello": 2,
     "area": "Relazione terapeutica",
     "spiegazione": "Modo di ascolto raccomandato da Freud all'analista (Consigli al medico nel trattamento psicoanalitico, 1912): un'attenzione «ugualmente sospesa», che non privilegia a priori nessun elemento del discorso del paziente. È il corrispettivo della libera associazione."
@@ -418,7 +418,7 @@
   {
     "id": 53,
     "parola": "Neutralità",
-    "vietate": ["Imparziale", "Giudizio", "Valori", "Schierarsi"],
+    "vietate": ["Imparziale", "Giudizio", "Valori", "Schierarsi", "Freud"],
     "livello": 2,
     "area": "Relazione terapeutica",
     "spiegazione": "Atteggiamento dell'analista che non prende posizione su valori religiosi, morali o sociali, non orienta la cura secondo un ideale e non privilegia a priori alcuna istanza psichica. Anna Freud la descrive come equidistanza tra Es, Io e Super-Io."
@@ -426,7 +426,7 @@
   {
     "id": 54,
     "parola": "Nevrosi ossessiva",
-    "vietate": ["Rituali", "Compulsione", "Dubbio", "Uomo dei topi"],
+    "vietate": ["Rituali", "Compulsione", "Dubbio", "Uomo dei topi", "Freud"],
     "livello": 2,
     "area": "Psicopatologia",
     "spiegazione": "Nevrosi in cui il conflitto si esprime in pensieri ossessivi, compulsioni, rituali e dubbi. Difese tipiche: formazione reattiva, isolamento e annullamento retroattivo. Caso classico: l'Uomo dei topi (1909)."
@@ -434,7 +434,7 @@
   {
     "id": 55,
     "parola": "Psicosi",
-    "vietate": ["Delirio", "Realtà", "Allucinazioni", "Schizofrenia"],
+    "vietate": ["Delirio", "Realtà", "Allucinazioni", "Schizofrenia", "Freud"],
     "livello": 2,
     "area": "Psicopatologia",
     "spiegazione": "Disturbo primario della relazione libidica con la realtà; il delirio è inteso da Freud come tentativo di guarigione e ricostruzione. Nella nevrosi l'Io, obbediente alla realtà, rimuove una parte dell'Es; nella psicosi l'Io, al servizio dell'Es, si ritira da una parte della realtà (1924)."
@@ -442,7 +442,7 @@
   {
     "id": 56,
     "parola": "Conflitto intrapsichico",
-    "vietate": ["Istanze", "Interno", "Opposti", "Compromesso"],
+    "vietate": ["Istanze", "Interno", "Opposti", "Compromesso", "Freud"],
     "livello": 2,
     "area": "Psicopatologia",
     "spiegazione": "Opposizione tra esigenze interne contrarie: desiderio e difesa, Es e Super-Io, pulsioni di vita e di morte. Per Freud è costitutivo dell'essere umano; i sintomi nevrotici ne sono formazioni di compromesso."
@@ -450,7 +450,7 @@
   {
     "id": 57,
     "parola": "Fobia",
-    "vietate": ["Paura", "Evitare", "Cavallo", "Piccolo Hans"],
+    "vietate": ["Paura", "Evitare", "Cavallo", "Piccolo Hans", "Freud"],
     "livello": 2,
     "area": "Psicopatologia",
     "spiegazione": "Paura intensa di un oggetto o di una situazione. Freud la inquadra come isteria d'angoscia: l'angoscia legata a un conflitto inconscio viene spostata su un oggetto esterno, che si può evitare. Caso classico: il piccolo Hans e la paura dei cavalli (1909)."
@@ -514,7 +514,7 @@
   {
     "id": 65,
     "parola": "Fase fallica",
-    "vietate": ["Pene", "Edipo", "Castrazione", "Genitale"],
+    "vietate": ["Pene", "Edipo", "Castrazione", "Genitale", "Freud"],
     "livello": 2,
     "area": "Infanzia e sviluppo",
     "spiegazione": "Organizzazione libidica infantile (circa 3–5 anni) descritta da Freud nel 1923: per entrambi i sessi conta un solo organo genitale, il fallo, e l'opposizione è tra fallico e castrato. Coincide con l'apice del complesso edipico."
@@ -522,7 +522,7 @@
   {
     "id": 66,
     "parola": "Periodo di latenza",
-    "vietate": ["Pausa", "Pubertà", "Scuola", "Sessualità"],
+    "vietate": ["Pausa", "Pubertà", "Scuola", "Sessualità", "Freud"],
     "livello": 2,
     "area": "Infanzia e sviluppo",
     "spiegazione": "Va dal tramonto del complesso edipico (circa 6 anni) alla pubertà: l'attività sessuale si attenua e si sviluppano pudore, disgusto e aspirazioni morali ed estetiche. Freud lo chiama periodo e non fase, perché non vi compare una nuova organizzazione libidica."
@@ -546,7 +546,7 @@
   {
     "id": 69,
     "parola": "Complesso di castrazione",
-    "vietate": ["Pene", "Minaccia", "Edipo", "Fallo"],
+    "vietate": ["Pene", "Minaccia", "Edipo", "Fallo", "Freud"],
     "livello": 2,
     "area": "Infanzia e sviluppo",
     "spiegazione": "Complesso centrato sulla fantasia di castrazione, risposta del bambino all'enigma della differenza anatomica dei sessi. Nel maschio la minaccia di castrazione porta al tramonto del complesso edipico; nella bambina l'invidia del pene vi introduce."
@@ -554,7 +554,7 @@
   {
     "id": 70,
     "parola": "Scena primaria",
-    "vietate": ["Genitori", "Rapporto sessuale", "Osservare", "Uomo dei lupi"],
+    "vietate": ["Genitori", "Rapporto sessuale", "Osservare", "Uomo dei lupi", "Freud"],
     "livello": 2,
     "area": "Infanzia e sviluppo",
     "spiegazione": "Scena del rapporto sessuale tra i genitori, osservata o fantasticata dal bambino, che di solito la interpreta come un atto di violenza. È al centro del caso dell'Uomo dei lupi (Dalla storia di una nevrosi infantile, 1918)."
@@ -714,7 +714,7 @@
   {
     "id": 90,
     "parola": "Après-coup",
-    "vietate": ["Retroattivo", "Trauma", "Ricordo", "Posteriorità"],
+    "vietate": ["Retroattivo", "Trauma", "Ricordo", "Posteriorità", "Freud"],
     "livello": 3,
     "area": "Concetti freudiani",
     "spiegazione": "Resa francese del freudiano Nachträglichkeit: esperienze e tracce mnestiche vengono rimaneggiate in un tempo successivo, in funzione di nuove esperienze o di un nuovo grado di sviluppo, e solo allora acquistano senso ed efficacia traumatica. Esempi: il caso Emma nel Progetto (1895) e l'Uomo dei lupi."
@@ -722,7 +722,7 @@
   {
     "id": 91,
     "parola": "Elaborazione secondaria",
-    "vietate": ["Coerenza", "Facciata", "Risveglio", "Racconto"],
+    "vietate": ["Coerenza", "Facciata", "Risveglio", "Racconto", "Freud"],
     "livello": 3,
     "area": "Sogni e inconscio",
     "spiegazione": "Ultima operazione del lavoro onirico: rimaneggia il sogno per presentarlo come una storia relativamente coerente e comprensibile, una sorta di facciata. È affine alla razionalizzazione e agisce soprattutto vicino al risveglio."
@@ -730,7 +730,7 @@
   {
     "id": 92,
     "parola": "Considerazione della raffigurabilità",
-    "vietate": ["Immagini", "Visivo", "Concreto", "Lavoro onirico"],
+    "vietate": ["Immagini", "Visivo", "Concreto", "Lavoro onirico", "Freud"],
     "livello": 3,
     "area": "Sogni e inconscio",
     "spiegazione": "Esigenza del lavoro onirico per cui i pensieri del sogno devono essere tradotti in immagini, soprattutto visive. Relazioni logiche e concetti astratti diventano scene concrete, spesso sfruttando giochi di parole."
@@ -738,7 +738,7 @@
   {
     "id": 93,
     "parola": "Ombelico del sogno",
-    "vietate": ["Irma", "Ignoto", "Groviglio", "Interpretazione"],
+    "vietate": ["Irma", "Ignoto", "Groviglio", "Interpretazione", "Freud"],
     "livello": 3,
     "area": "Sogni e inconscio",
     "spiegazione": "Espressione di Freud nell'Interpretazione dei sogni: anche nei sogni meglio interpretati resta un punto che non si può sciogliere, un groviglio di pensieri in cui il sogno affonda nell'ignoto. Freud la introduce a proposito del sogno dell'iniezione di Irma."
@@ -746,7 +746,7 @@
   {
     "id": 94,
     "parola": "Reazione terapeutica negativa",
-    "vietate": ["Peggioramento", "Colpa", "Guarigione", "Masochismo"],
+    "vietate": ["Peggioramento", "Colpa", "Guarigione", "Masochismo", "Freud"],
     "livello": 3,
     "area": "Relazione terapeutica",
     "spiegazione": "Fenomeno per cui il paziente peggiora proprio quando la cura progredisce o dopo un'interpretazione corretta. Freud (L'Io e l'Es, 1923) lo attribuisce a un senso di colpa inconscio e al bisogno di punizione, legati al masochismo morale."
@@ -754,7 +754,7 @@
   {
     "id": 95,
     "parola": "Perlaborazione",
-    "vietate": ["Rielaborare", "Ripetere", "Resistenze", "Tempo"],
+    "vietate": ["Rielaborare", "Ripetere", "Resistenze", "Tempo", "Freud"],
     "livello": 3,
     "area": "Relazione terapeutica",
     "spiegazione": "Processo con cui l'analisi integra un'interpretazione e supera le resistenze che essa suscita (Ricordare, ripetere e rielaborare, 1914). Richiede tempo: non basta che il paziente conosca il rimosso, deve lavorarlo a lungo nel transfert."
@@ -762,7 +762,7 @@
   {
     "id": 96,
     "parola": "Nevrosi attuale",
-    "vietate": ["Nevrastenia", "Psiconevrosi", "Somatico", "Presente"],
+    "vietate": ["Nevrastenia", "Psiconevrosi", "Somatico", "Presente", "Freud"],
     "livello": 3,
     "area": "Psicopatologia",
     "spiegazione": "Categoria freudiana (nevrastenia, nevrosi d'angoscia, più tardi ipocondria) in cui i sintomi derivano da un disordine attuale della vita sessuale e non da conflitti infantili. Si oppone alle psiconevrosi, i cui sintomi hanno un significato simbolico."
@@ -770,7 +770,7 @@
   {
     "id": 97,
     "parola": "Beneficio secondario della malattia",
-    "vietate": ["Vantaggio", "Guadagno", "Sintomo", "Attenzioni"],
+    "vietate": ["Vantaggio", "Guadagno", "Sintomo", "Attenzioni", "Freud"],
     "livello": 3,
     "area": "Psicopatologia",
     "spiegazione": "Vantaggio esterno che il soggetto ricava dalla malattia una volta che questa si è costituita: attenzioni, protezione, esonero da responsabilità. Si distingue dal beneficio primario, cioè la soddisfazione e la riduzione di tensione che il sintomo produce in quanto compromesso."
@@ -794,7 +794,7 @@
   {
     "id": 100,
     "parola": "Ideale dell'Io",
-    "vietate": ["Super-Io", "Modello", "Perfezione", "Narcisismo"],
+    "vietate": ["Super-Io", "Modello", "Perfezione", "Narcisismo", "Freud"],
     "livello": 3,
     "area": "Concetti freudiani",
     "spiegazione": "Modello a cui il soggetto cerca di conformarsi, nato dalla convergenza di narcisismo e identificazioni con i genitori e i loro ideali. In Introduzione al narcisismo (1914) è il sostituto della perfezione narcisistica perduta; nel 1923 Freud lo fa confluire nel Super-Io."

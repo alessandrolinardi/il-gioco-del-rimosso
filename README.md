@@ -93,8 +93,10 @@ pwa-assets.config.ts     icone generate
 ### Modificare le carte
 
 Le carte sono in [`src/data/cards.json`](src/data/cards.json). Dopo una modifica lancia `npm test`:
-un test controlla che ci siano 100 carte con la divisione 30/40/30, quattro parole vietate per carta
-e solo le otto aree previste. Se cambi apposta la composizione del mazzo, aggiorna anche quel test
+un test controlla che ci siano 100 carte con la divisione 30/40/30, quattro o cinque parole vietate
+per carta e solo le otto aree previste. Controlla anche una regola del gioco: tra le parole vietate
+c'è sempre l'autore del concetto (Freud, Klein, Winnicott…), tranne nelle carte che sono esse stesse
+autori. Se cambi apposta la composizione del mazzo, aggiorna anche quel test
 ([`src/data/cards.test.ts`](src/data/cards.test.ts)).
 
 ## Sul telefono
