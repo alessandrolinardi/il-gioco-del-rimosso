@@ -49,11 +49,11 @@
   },
   {
     "id": 7,
-    "parola": "Rimozione",
-    "vietate": ["Dimenticare", "Inconscio", "Ricordo", "Spingere", "Freud"],
+    "parola": "Drop-out",
+    "vietate": ["Abbandono", "Interrompere", "Terapia", "Lasciare", "Scuola"],
     "livello": 1,
-    "area": "Concetti freudiani",
-    "spiegazione": "Operazione con cui il soggetto respinge o mantiene nell'inconscio rappresentazioni legate a una pulsione il cui soddisfacimento provocherebbe dispiacere. Per Freud (1914) la dottrina della rimozione è «il pilastro su cui poggia l'edificio della psicoanalisi»."
+    "area": "Relazione terapeutica",
+    "spiegazione": "Interruzione prematura della terapia decisa dal paziente, spesso senza preavviso e prima di una conclusione concordata. È più frequente nei primi colloqui e con gli adolescenti; può esprimere una resistenza, un agito o una delusione verso il terapeuta. Il caso più celebre è Dora, che lasciò Freud dopo meno di tre mesi. Il termine indica anche l'abbandono scolastico."
   },
   {
     "id": 8,
@@ -89,19 +89,19 @@
   },
   {
     "id": 12,
-    "parola": "Negazione",
-    "vietate": ["No", "Rifiutare", "Ammettere", "Realtà", "Freud"],
+    "parola": "Seduttività",
+    "vietate": ["Sedurre", "Fascino", "Conquistare", "Isteria"],
     "livello": 1,
-    "area": "Meccanismi di difesa",
-    "spiegazione": "In senso freudiano (Verneinung, 1925) è il procedimento con cui il soggetto formula un pensiero rimosso negando che gli appartenga («Non è mia madre»): il rimosso arriva alla coscienza a patto di essere negato. Nelle classificazioni correnti delle difese il termine indica anche il rifiuto di riconoscere una realtà dolorosa, che Freud chiama più precisamente diniego (carta 43)."
+    "area": "Psicopatologia",
+    "spiegazione": "Tendenza ad attrarre e conquistare l'altro, con il corpo o con le parole, per ottenerne attenzione, conferma o controllo. È un tratto classicamente associato all'isteria e in terapia può comparire nel transfert come difesa dal dolore o dalla dipendenza. Da non confondere con la teoria della seduzione, che Freud formulò nel 1896 e abbandonò nel 1897."
   },
   {
     "id": 13,
-    "parola": "Razionalizzazione",
-    "vietate": ["Giustificazione", "Logica", "Scusa", "Motivi", "Jones"],
+    "parola": "Acting out",
+    "vietate": ["Agire", "Azione", "Impulsività", "Ricordare", "Freud"],
     "livello": 1,
     "area": "Meccanismi di difesa",
-    "spiegazione": "Procedimento con cui il soggetto dà una spiegazione coerente e moralmente accettabile di un comportamento, di un sentimento o di un sintomo i cui veri motivi gli sfuggono. Il termine fu introdotto da Ernest Jones nel 1908."
+    "spiegazione": "Passaggio all'azione di un conflitto inconscio che non viene ricordato né messo in parole. Freud lo descrive nel 1914 in «Ricordare, ripetere e rielaborare»: il paziente non ricorda ciò che ha rimosso, ma lo mette in atto ripetendolo. Spesso impulsivo e fuori dalla seduta, è tipico dell'adolescenza, in cui l'agire prende il posto del pensare."
   },
   {
     "id": 14,
@@ -161,11 +161,11 @@
   },
   {
     "id": 21,
-    "parola": "Nevrosi",
-    "vietate": ["Sintomo", "Conflitto", "Ansia", "Psicosi", "Freud"],
+    "parola": "Adolescenza",
+    "vietate": ["Pubertà", "Ragazzi", "Crescita", "Teenager"],
     "livello": 1,
-    "area": "Psicopatologia",
-    "spiegazione": "Affezione psicogena in cui i sintomi sono l'espressione simbolica di un conflitto psichico radicato nella storia infantile e costituiscono formazioni di compromesso tra desiderio e difesa. Le psiconevrosi classiche sono isteria, nevrosi ossessiva e fobia."
+    "area": "Infanzia e sviluppo",
+    "spiegazione": "Fase di passaggio tra infanzia ed età adulta, avviata dalla pubertà. Freud ne tratta nel terzo dei Tre saggi (1905), «Le trasformazioni della pubertà»; Anna Freud, Peter Blos ed Erik Erikson ne fanno un'età con compiti propri: separarsi dai genitori dell'infanzia, integrare il corpo sessuato, costruire un'identità."
   },
   {
     "id": 22,
@@ -193,19 +193,19 @@
   },
   {
     "id": 25,
-    "parola": "Fase orale",
-    "vietate": ["Bocca", "Seno", "Allattamento", "Succhiare", "Freud"],
+    "parola": "Area G",
+    "vietate": ["Istituzione", "Scuola", "Bergamaschi", "Formazione"],
     "livello": 1,
-    "area": "Infanzia e sviluppo",
-    "spiegazione": "Primo stadio dello sviluppo libidico (circa il primo anno): la zona erogena è la bocca e il piacere è legato all'alimentazione. Karl Abraham vi distingue una fase precoce di suzione e una fase sadico-orale, contemporanea alla comparsa dei denti."
+    "area": "Autori e correnti",
+    "spiegazione": "Associazione nata a Milano nel 1991 da psicoterapeuti di formazione psicoanalitica dediti all'adolescenza, ispirata da Tommaso Senise, pioniere della psicoanalisi dell'adolescenza in Italia. Nel 2001 Cesare Freddi ed Eugenia Pelanda fondano la Scuola di psicoterapia a orientamento psicoanalitico per adolescenti e adulti, riconosciuta dal MIUR e diretta da Lucina Bergamaschi. Ha sedi a Milano e Torino."
   },
   {
     "id": 26,
-    "parola": "Fase anale",
-    "vietate": ["Feci", "Controllo", "Trattenere", "Vasino", "Freud"],
+    "parola": "Giovane adulto",
+    "vietate": ["Adolescenza", "Autonomia", "Vent'anni", "Intimità", "Erikson"],
     "livello": 1,
     "area": "Infanzia e sviluppo",
-    "spiegazione": "Secondo stadio dello sviluppo libidico (circa 2–3 anni): la zona erogena è la mucosa anale e la relazione è organizzata intorno a trattenere ed espellere. Vi dominano ambivalenza e sadismo; Freud la collega al carattere anale: ordine, parsimonia, ostinazione (1908)."
+    "spiegazione": "Fase che segue l'adolescenza, grosso modo fino ai trent'anni, in cui si consolidano l'autonomia dalla famiglia, il lavoro e i legami di coppia. Per Erikson è l'età del conflitto tra intimità e isolamento; Arnett (2000) parla di «emerging adulthood», un passaggio che si allunga con il prolungarsi degli studi e della dipendenza economica."
   },
   {
     "id": 27,
@@ -305,19 +305,19 @@
   },
   {
     "id": 39,
-    "parola": "Isolamento",
-    "vietate": ["Affetto", "Separare", "Ossessivo", "Freddezza", "Freud"],
+    "parola": "Borderline",
+    "vietate": ["Confine", "Limite", "Instabilità", "Personalità", "Kernberg"],
     "livello": 2,
-    "area": "Meccanismi di difesa",
-    "spiegazione": "Meccanismo tipico della nevrosi ossessiva: un pensiero o un comportamento viene separato dal suo affetto o dalle sue connessioni con altri pensieri, per esempio con pause o rituali. Il ricordo resta presente ma privo di carica emotiva."
+    "area": "Psicopatologia",
+    "spiegazione": "In origine indicava i pazienti «al confine» tra nevrosi e psicosi (Stern, 1938). Kernberg (1967) descrive un'organizzazione borderline di personalità: diffusione dell'identità, difese primitive come la scissione, esame di realtà conservato. Dal DSM-III (1980) è anche un disturbo di personalità, segnato da instabilità affettiva, impulsività e paura dell'abbandono."
   },
   {
     "id": 40,
-    "parola": "Identificazione",
-    "vietate": ["Imitare", "Modello", "Assimilare", "Somigliare", "Freud"],
+    "parola": "Psicoterapia",
+    "vietate": ["Cura", "Terapeuta", "Sedute", "Psicologo", "Parola"],
     "livello": 2,
-    "area": "Meccanismi di difesa",
-    "spiegazione": "Processo con cui un soggetto assimila un aspetto, una proprietà o un attributo dell'altro e si trasforma, totalmente o parzialmente, sul suo modello. Per Freud è l'operazione attraverso cui si costituiscono l'Io e il Super-Io."
+    "area": "Relazione terapeutica",
+    "spiegazione": "Cura dei disturbi psichici attraverso la relazione e la parola. Quella a orientamento psicoanalitico ne riprende strumenti come transfert e interpretazione, di solito con meno sedute a settimana e con il paziente vis-à-vis. In Italia la legge 56/1989 la riserva a psicologi e medici che hanno seguito una specializzazione di almeno quattro anni."
   },
   {
     "id": 41,
@@ -329,11 +329,11 @@
   },
   {
     "id": 42,
-    "parola": "Annullamento retroattivo",
-    "vietate": ["Disfare", "Rituale", "Cancellare", "Magico", "Freud"],
+    "parola": "Insight",
+    "vietate": ["Comprensione", "Intuizione", "Consapevolezza", "Capire"],
     "livello": 2,
-    "area": "Meccanismi di difesa",
-    "spiegazione": "Meccanismo tipico della nevrosi ossessiva: il soggetto si sforza di far sì che pensieri, parole o gesti passati non siano accaduti, compiendo un pensiero o un'azione di senso opposto. Ha un carattere magico ed è all'origine di molti rituali ossessivi."
+    "area": "Relazione terapeutica",
+    "spiegazione": "Comprensione improvvisa e vissuta di un nesso fino ad allora inconscio, per esempio tra un sintomo e un conflitto. La tecnica psicoanalitica distingue l'insight intellettuale, che resta sterile, da quello emotivo, che produce cambiamento. Il termine viene dalla psicologia della Gestalt: Köhler (1917) lo usò per gli scimpanzé che risolvono un problema all'improvviso."
   },
   {
     "id": 43,
@@ -345,11 +345,11 @@
   },
   {
     "id": 44,
-    "parola": "Condensazione",
-    "vietate": ["Fusione", "Sovradeterminazione", "Unire", "Comprimere", "Freud"],
+    "parola": "Collusione",
+    "vietate": ["Complicità", "Accordo", "Coppia", "Patto", "Willi"],
     "livello": 2,
-    "area": "Sogni e inconscio",
-    "spiegazione": "Meccanismo del lavoro onirico per cui un'unica rappresentazione (una persona, un'immagine, una parola) rappresenta da sola più catene associative. Spiega perché il sogno manifesto è molto più breve dei pensieri latenti e perché ogni suo elemento è sovradeterminato."
+    "area": "Relazione terapeutica",
+    "spiegazione": "Accordo inconscio tra due persone che si incastrano su un conflitto comune, ciascuna delegando all'altra la parte che rifiuta di sé. Jürg Willi lo applica alla coppia («La collusione di coppia», 1975), dopo Laing e Dicks. In terapia c'è collusione quando il terapeuta asseconda la difesa del paziente invece di riconoscerla e nominarla."
   },
   {
     "id": 45,
@@ -425,11 +425,11 @@
   },
   {
     "id": 54,
-    "parola": "Nevrosi ossessiva",
-    "vietate": ["Rituali", "Compulsione", "Dubbio", "Uomo dei topi", "Freud"],
+    "parola": "Diagnosi",
+    "vietate": ["DSM", "Sintomi", "Classificazione", "Medico", "Etichetta"],
     "livello": 2,
     "area": "Psicopatologia",
-    "spiegazione": "Nevrosi in cui il conflitto si esprime in pensieri ossessivi, compulsioni, rituali e dubbi. Difese tipiche: formazione reattiva, isolamento e annullamento retroattivo. Caso classico: l'Uomo dei topi (1909)."
+    "spiegazione": "Identificazione del disturbo e del funzionamento di chi chiede aiuto. I manuali descrittivi come DSM e ICD classificano per sintomi; la diagnosi psicodinamica guarda anche alla struttura di personalità, alle difese e alla qualità delle relazioni (McWilliams, 1994; PDM, 2006). In psicoterapia si costruisce nei primi colloqui e resta sempre rivedibile."
   },
   {
     "id": 55,
@@ -473,11 +473,11 @@
   },
   {
     "id": 60,
-    "parola": "Jacques Lacan",
-    "vietate": ["Francese", "Specchio", "Significante", "Ritorno a Freud"],
+    "parola": "Metafora",
+    "vietate": ["Similitudine", "Paragone", "Simbolo", "Figura retorica", "Lacan"],
     "livello": 2,
-    "area": "Autori e correnti",
-    "spiegazione": "Jacques Lacan (1901–1981), psicoanalista francese promotore del «ritorno a Freud». Sostiene che l'inconscio è strutturato come un linguaggio e articola l'esperienza nei registri del Reale, del Simbolico e dell'Immaginario."
+    "area": "Sogni e inconscio",
+    "spiegazione": "Figura che dice una cosa con le parole di un'altra. Lacan, in «L'istanza della lettera» (1957), riprende Jakobson e accosta la metafora alla condensazione freudiana e la metonimia allo spostamento: da qui la formula «il sintomo è una metafora». In seduta, soprattutto con bambini e adolescenti, la metafora permette di avvicinare ciò che detto direttamente sarebbe troppo."
   },
   {
     "id": 61,
@@ -513,11 +513,11 @@
   },
   {
     "id": 65,
-    "parola": "Fase fallica",
-    "vietate": ["Pene", "Edipo", "Castrazione", "Genitale", "Freud"],
+    "parola": "Attacco di panico",
+    "vietate": ["Ansia", "Paura", "Tachicardia", "Morire", "Freud"],
     "livello": 2,
-    "area": "Infanzia e sviluppo",
-    "spiegazione": "Organizzazione libidica infantile (circa 3–5 anni) descritta da Freud nel 1923: per entrambi i sessi conta un solo organo genitale, il fallo, e l'opposizione è tra fallico e castrato. Coincide con l'apice del complesso edipico."
+    "area": "Psicopatologia",
+    "spiegazione": "Ondata improvvisa di paura intensa, con cuore in gola, fame d'aria, vertigini e la sensazione di morire o impazzire. Freud ne aveva descritto il quadro nel 1895 come «attacco d'angoscia» della nevrosi d'angoscia; il DSM-III (1980) lo codifica nel disturbo di panico, spesso associato all'agorafobia."
   },
   {
     "id": 66,
@@ -545,11 +545,11 @@
   },
   {
     "id": 69,
-    "parola": "Complesso di castrazione",
-    "vietate": ["Pene", "Minaccia", "Edipo", "Fallo", "Freud"],
+    "parola": "Identità",
+    "vietate": ["Sé", "Chi sono", "Adolescenza", "Ruolo", "Erikson"],
     "livello": 2,
     "area": "Infanzia e sviluppo",
-    "spiegazione": "Complesso centrato sulla fantasia di castrazione, risposta del bambino all'enigma della differenza anatomica dei sessi. Nel maschio la minaccia di castrazione porta al tramonto del complesso edipico; nella bambina l'invidia del pene vi introduce."
+    "spiegazione": "Senso di essere sé stessi in modo continuo nel tempo e riconosciuto dagli altri. Erikson («Infanzia e società», 1950; «Gioventù e crisi d'identità», 1968) ne fa il compito centrale dell'adolescenza: identità contro dispersione dei ruoli. Per Kernberg la diffusione dell'identità è un tratto dell'organizzazione borderline (carta 39)."
   },
   {
     "id": 70,
@@ -633,51 +633,51 @@
   },
   {
     "id": 80,
-    "parola": "Stadio dello specchio",
-    "vietate": ["Lacan", "Immagine", "Riflesso", "Immaginario"],
+    "parola": "Trauma",
+    "vietate": ["Ferita", "Shock", "Evento", "Stress", "Freud"],
     "livello": 3,
-    "area": "Post-freudiani",
-    "spiegazione": "Concetto di Lacan (1936, testo definitivo 1949): tra i 6 e i 18 mesi il bambino riconosce con giubilo la propria immagine riflessa e anticipa un'unità corporea che ancora non possiede. L'Io nasce così da un'identificazione immaginaria, all'origine della sua alienazione."
+    "area": "Psicopatologia",
+    "spiegazione": "Evento che supera la capacità della psiche di elaborarlo. Freud lo pone all'origine dell'isteria negli Studi sull'isteria (1895, con Breuer) e in «Al di là del principio di piacere» (1920) lo descrive come effrazione della barriera antistimolo. Ferenczi (1932) studia la confusione di lingue tra adulto e bambino; dal DSM-III (1980) esiste il disturbo post-traumatico da stress."
   },
   {
     "id": 81,
-    "parola": "Nome-del-Padre",
-    "vietate": ["Lacan", "Legge", "Forclusione", "Significante"],
+    "parola": "Transgenerazionale",
+    "vietate": ["Generazioni", "Eredità", "Famiglia", "Segreto", "Torok"],
     "livello": 3,
     "area": "Post-freudiani",
-    "spiegazione": "Significante che per Lacan rappresenta la funzione simbolica del padre, cioè la legge che separa il bambino dal desiderio della madre (metafora paterna). La sua forclusione è ciò che Lacan pone all'origine della psicosi."
+    "spiegazione": "Trasmissione inconscia, da una generazione all'altra, di ciò che non è stato elaborato: lutti, traumi, segreti di famiglia. Nicolas Abraham e Maria Torok («La scorza e il nocciolo», 1978) parlano di cripta e di fantasma, la presenza muta nel discendente del segreto di un genitore; sul tema hanno scritto anche Haydée Faimberg e René Kaës."
   },
   {
     "id": 82,
-    "parola": "Grande Altro",
-    "vietate": ["Lacan", "Linguaggio", "Simbolico", "Inconscio"],
+    "parola": "Riparazione maniacale",
+    "vietate": ["Riparare", "Onnipotenza", "Trionfo", "Disprezzo", "Klein"],
     "livello": 3,
     "area": "Post-freudiani",
-    "spiegazione": "In Lacan, l'Altro con la maiuscola è il luogo del linguaggio e dell'ordine simbolico che precede il soggetto e lo determina; si distingue dal piccolo altro, il simile dell'immaginario. Da qui la formula «l'inconscio è il discorso dell'Altro»."
+    "spiegazione": "Per Klein è una riparazione che nega la colpa invece di attraversarla: l'oggetto danneggiato viene «aggiustato» in modo onnipotente, senza riconoscere la dipendenza né il lutto. Fa parte delle difese maniacali (controllo, trionfo, disprezzo) descritte nei saggi del 1935 e del 1940; Hanna Segal la distingue dalla riparazione autentica della posizione depressiva."
   },
   {
     "id": 83,
-    "parola": "Forclusione",
-    "vietate": ["Lacan", "Psicosi", "Nome-del-Padre", "Verwerfung"],
+    "parola": "Narcisismo del terapeuta",
+    "vietate": ["Ammirazione", "Vanità", "Conferme", "Specchio", "Ego"],
     "livello": 3,
-    "area": "Psicopatologia",
-    "spiegazione": "Traduzione proposta da Lacan per il termine freudiano Verwerfung: espulsione di un significante fondamentale, il Nome-del-Padre, che non viene mai iscritto nell'ordine simbolico. Ciò che è forcluso dal simbolico ritorna nel reale, per esempio nell'allucinazione."
+    "area": "Relazione terapeutica",
+    "spiegazione": "Bisogno del terapeuta di sentirsi bravo, ammirato o indispensabile, che può piegare la cura alle sue conferme invece che ai bisogni del paziente: interpretazioni brillanti, fatica a tollerare i fallimenti, difficoltà a lasciar andare. È un tema del controtransfert, da riconoscere nell'analisi personale e in supervisione."
   },
   {
     "id": 84,
-    "parola": "Invidia primaria",
-    "vietate": ["Klein", "Seno", "Gratitudine", "Distruggere"],
+    "parola": "Capacità negativa",
+    "vietate": ["Keats", "Incertezza", "Dubbio", "Tollerare", "Bion"],
     "livello": 3,
     "area": "Post-freudiani",
-    "spiegazione": "Concetto di Klein (Invidia e gratitudine, 1957): espressione precoce e costituzionale della pulsione di morte, diretta contro l'oggetto buono, il seno che nutre, proprio perché possiede ciò che il bambino desidera. Ostacola la gratitudine e l'introiezione stabile dell'oggetto buono."
+    "spiegazione": "Espressione del poeta John Keats (lettera del 1817): saper restare nelle incertezze, nei misteri e nei dubbi senza affannarsi a cercare fatti e ragioni. Bion la riprende in «Attenzione e interpretazione» (1970) come disposizione dell'analista, legata al suo invito ad ascoltare «senza memoria e senza desiderio»."
   },
   {
     "id": 85,
-    "parola": "Phantasia inconscia",
-    "vietate": ["Klein", "Isaacs", "Immaginazione", "Istinto"],
+    "parola": "Consultazione",
+    "vietate": ["Colloqui", "Valutazione", "Primi incontri", "Richiesta", "Winnicott"],
     "livello": 3,
-    "area": "Post-freudiani",
-    "spiegazione": "Espressione mentale delle pulsioni, sempre presente e attiva fin dall'inizio della vita. Formulata da Susan Isaacs (1948) per la scuola kleiniana; la grafia «ph» distingue questa attività inconscia dalla fantasticheria cosciente."
+    "area": "Relazione terapeutica",
+    "spiegazione": "Ciclo di primi colloqui in cui si accoglie la domanda, si valuta la situazione e si decide insieme se e come proseguire. Winnicott ne mostra la portata già terapeutica in «Colloqui terapeutici con i bambini» (1971), con il gioco dello scarabocchio. Con gli adolescenti di solito coinvolge anche i genitori."
   },
   {
     "id": 86,
@@ -689,11 +689,11 @@
   },
   {
     "id": 87,
-    "parola": "Inconscio collettivo",
-    "vietate": ["Jung", "Archetipi", "Universale", "Personale"],
+    "parola": "Enactment",
+    "vietate": ["Messa in atto", "Agire", "Controtransfert", "Coinvolgimento", "Jacobs"],
     "livello": 3,
-    "area": "Autori e correnti",
-    "spiegazione": "Concetto di Jung: strato profondo della psiche, comune a tutta l'umanità e non acquisito individualmente, i cui contenuti sono gli archetipi. Si distingue dall'inconscio personale, formato da esperienze rimosse o dimenticate."
+    "area": "Relazione terapeutica",
+    "spiegazione": "Messa in atto inconscia, nella relazione analitica, di un conflitto che coinvolge entrambi: il terapeuta, senza accorgersene, entra nella parte che il paziente gli assegna. Theodore Jacobs (1986) parla di enactment controtransferali; per la psicoanalisi relazionale sono inevitabili e, se riconosciuti, diventano una via di comprensione. Diverso dall'acting out (carta 13), che riguarda il paziente."
   },
   {
     "id": 88,
@@ -705,11 +705,11 @@
   },
   {
     "id": 89,
-    "parola": "Individuazione",
-    "vietate": ["Jung", "Sé", "Totalità", "Processo"],
+    "parola": "Processo di individuazione",
+    "vietate": ["Jung", "Sé", "Blos", "Separazione", "Adolescenza"],
     "livello": 3,
     "area": "Autori e correnti",
-    "spiegazione": "Per Jung, il processo con cui una persona diventa un individuo psicologico unico e intero, integrando gradualmente i contenuti inconsci (Ombra, Anima e Animus) intorno al Sé, l'archetipo della totalità."
+    "spiegazione": "Per Jung, il processo con cui una persona diventa un individuo psicologico unico e intero, integrando gradualmente i contenuti inconsci (Ombra, Anima e Animus) intorno al Sé, l'archetipo della totalità. Peter Blos (1967) chiama l'adolescenza «secondo processo di individuazione», il distacco dalle figure interne dell'infanzia. Tommaso Senise, ispiratore di Area G (carta 25), ne ha tratto una psicoterapia breve con l'adolescente e i suoi genitori."
   },
   {
     "id": 90,
@@ -721,51 +721,51 @@
   },
   {
     "id": 91,
-    "parola": "Elaborazione secondaria",
-    "vietate": ["Coerenza", "Facciata", "Risveglio", "Racconto", "Freud"],
+    "parola": "Self-disclosure",
+    "vietate": ["Rivelare", "Personale", "Esporsi", "Confidare", "Neutralità"],
     "livello": 3,
-    "area": "Sogni e inconscio",
-    "spiegazione": "Ultima operazione del lavoro onirico: rimaneggia il sogno per presentarlo come una storia relativamente coerente e comprensibile, una sorta di facciata. È affine alla razionalizzazione e agisce soprattutto vicino al risveglio."
+    "area": "Relazione terapeutica",
+    "spiegazione": "Il terapeuta rivela al paziente qualcosa di sé: un'informazione personale, un'emozione provata in seduta, un errore. La tecnica classica la evita per proteggere neutralità e transfert; la psicoanalisi relazionale la ammette, con misura, quando serve al paziente e non al terapeuta. Il caso estremo fu l'analisi reciproca tentata da Ferenczi."
   },
   {
     "id": 92,
-    "parola": "Considerazione della raffigurabilità",
-    "vietate": ["Immagini", "Visivo", "Concreto", "Lavoro onirico", "Freud"],
+    "parola": "Rêverie",
+    "vietate": ["Sogno", "Madre", "Contenitore", "Fantasticare", "Bion"],
     "livello": 3,
-    "area": "Sogni e inconscio",
-    "spiegazione": "Esigenza del lavoro onirico per cui i pensieri del sogno devono essere tradotti in immagini, soprattutto visive. Relazioni logiche e concetti astratti diventano scene concrete, spesso sfruttando giochi di parole."
+    "area": "Post-freudiani",
+    "spiegazione": "Per Bion («Apprendere dall'esperienza», 1962) è lo stato di accoglienza sognante con cui la madre riceve le angosce del bambino e le trasforma in qualcosa di pensabile. In seduta è la disponibilità dell'analista a lasciarsi attraversare da immagini e pensieri, che autori come Ogden e Ferro usano come strumento per comprendere il paziente."
   },
   {
     "id": 93,
-    "parola": "Ombelico del sogno",
-    "vietate": ["Irma", "Ignoto", "Groviglio", "Interpretazione", "Freud"],
+    "parola": "Terzo analitico",
+    "vietate": ["Intersoggettività", "Coppia", "Relazione", "Campo", "Ogden"],
     "livello": 3,
-    "area": "Sogni e inconscio",
-    "spiegazione": "Espressione di Freud nell'Interpretazione dei sogni: anche nei sogni meglio interpretati resta un punto che non si può sciogliere, un groviglio di pensieri in cui il sogno affonda nell'ignoto. Freud la introduce a proposito del sogno dell'iniezione di Irma."
+    "area": "Post-freudiani",
+    "spiegazione": "Concetto di Thomas Ogden (1994): il soggetto creato insieme da analista e paziente nella seduta, che non coincide con nessuno dei due e li influenza entrambi. L'analista lo coglie attraverso le proprie rêverie (carta 92), anche le più banali, e lo usa per capire che cosa sta accadendo nella relazione."
   },
   {
     "id": 94,
-    "parola": "Reazione terapeutica negativa",
-    "vietate": ["Peggioramento", "Colpa", "Guarigione", "Masochismo", "Freud"],
+    "parola": "Pensiero magico",
+    "vietate": ["Onnipotenza", "Superstizione", "Rituale", "Bambino", "Freud"],
     "livello": 3,
-    "area": "Relazione terapeutica",
-    "spiegazione": "Fenomeno per cui il paziente peggiora proprio quando la cura progredisce o dopo un'interpretazione corretta. Freud (L'Io e l'Es, 1923) lo attribuisce a un senso di colpa inconscio e al bisogno di punizione, legati al masochismo morale."
+    "area": "Concetti freudiani",
+    "spiegazione": "Convinzione che pensieri, desideri o parole possano agire direttamente sulla realtà. In «Totem e tabù» (1913) Freud la chiama «onnipotenza dei pensieri», espressione presa dall'Uomo dei topi, e la ritrova nei popoli primitivi, nei bambini e nei rituali della nevrosi ossessiva. Piaget la descrive come una tappa normale del pensiero infantile."
   },
   {
     "id": 95,
-    "parola": "Perlaborazione",
-    "vietate": ["Rielaborare", "Ripetere", "Resistenze", "Tempo", "Freud"],
+    "parola": "Gioco del rocchetto",
+    "vietate": ["Fort-da", "Filo", "Madre", "Assenza", "Freud"],
     "livello": 3,
-    "area": "Relazione terapeutica",
-    "spiegazione": "Processo con cui l'analisi integra un'interpretazione e supera le resistenze che essa suscita (Ricordare, ripetere e rielaborare, 1914). Richiede tempo: non basta che il paziente conosca il rimosso, deve lavorarlo a lungo nel transfert."
+    "area": "Infanzia e sviluppo",
+    "spiegazione": "Gioco osservato da Freud nel nipotino Ernst, di un anno e mezzo, e descritto in «Al di là del principio di piacere» (1920): il bambino lancia un rocchetto legato a un filo dicendo «fort» (via) e lo ritira con un gioioso «da» (qui). Così padroneggia l'assenza della madre, trasformando un'esperienza subita in una attiva."
   },
   {
     "id": 96,
-    "parola": "Nevrosi attuale",
-    "vietate": ["Nevrastenia", "Psiconevrosi", "Somatico", "Presente", "Freud"],
+    "parola": "Fantasia inconscia",
+    "vietate": ["Immaginazione", "Desiderio", "Freud", "Klein", "Isaacs"],
     "livello": 3,
-    "area": "Psicopatologia",
-    "spiegazione": "Categoria freudiana (nevrastenia, nevrosi d'angoscia, più tardi ipocondria) in cui i sintomi derivano da un disordine attuale della vita sessuale e non da conflitti infantili. Si oppone alle psiconevrosi, i cui sintomi hanno un significato simbolico."
+    "area": "Sogni e inconscio",
+    "spiegazione": "Scenario immaginario inconscio in cui si realizza un desiderio. Per Freud (1908) sta alla base dei sintomi isterici e delle fantasticherie; per la scuola kleiniana è l'espressione mentale delle pulsioni, attiva fin dall'inizio della vita. Susan Isaacs (1948) propone la grafia «phantasia» per distinguerla dalla fantasticheria cosciente."
   },
   {
     "id": 97,
@@ -777,19 +777,19 @@
   },
   {
     "id": 98,
-    "parola": "Psicologia dell'Io",
-    "vietate": ["Hartmann", "Adattamento", "Autonomia", "Stati Uniti"],
+    "parola": "Infant observation",
+    "vietate": ["Neonato", "Osservare", "Tavistock", "Famiglia", "Bick"],
     "livello": 3,
-    "area": "Autori e correnti",
-    "spiegazione": "Corrente sviluppata soprattutto negli Stati Uniti da Heinz Hartmann (Psicologia dell'Io e problema dell'adattamento, 1939), con Kris e Loewenstein. Mette l'accento sulle funzioni autonome dell'Io, come percezione, memoria e motilità, e sul suo ruolo nell'adattamento."
+    "area": "Infanzia e sviluppo",
+    "spiegazione": "Metodo introdotto da Esther Bick alla Tavistock Clinic nel 1948 per la formazione degli psicoterapeuti: per due anni, un'ora a settimana, si osserva un neonato con la sua famiglia senza intervenire, poi si discutono gli appunti in un piccolo gruppo. Insegna a tollerare l'angoscia e a cogliere la comunicazione non verbale."
   },
   {
     "id": 99,
-    "parola": "Discussioni controverse",
-    "vietate": ["Klein", "Anna Freud", "Londra", "Società britannica"],
+    "parola": "Perturbante",
+    "vietate": ["Unheimlich", "Inquietante", "Familiare", "Estraneo", "Freud"],
     "livello": 3,
-    "area": "Autori e correnti",
-    "spiegazione": "Serie di riunioni della Società Psicoanalitica Britannica (1941–1945) in cui si confrontarono i sostenitori di Melanie Klein e quelli di Anna Freud. Si chiusero con un compromesso che organizzò la formazione in tre gruppi: kleiniani, freudiani (anna-freudiani) e indipendenti."
+    "area": "Concetti freudiani",
+    "spiegazione": "Saggio di Freud del 1919 sul sentimento di angoscia che nasce da qualcosa di familiare diventato estraneo. Il tedesco unheimlich nega heimlich («domestico», ma anche «nascosto»): perturbante è ciò che doveva restare celato ed è riaffiorato, cioè il rimosso. L'esempio letterario è «L'uomo della sabbia» di Hoffmann."
   },
   {
     "id": 100,

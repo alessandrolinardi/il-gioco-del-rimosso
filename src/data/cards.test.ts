@@ -29,14 +29,19 @@ describe("cards.json", () => {
     }
   });
 
-  it("tra le parole vietate c'è sempre l'autore del concetto (tranne nelle carte che sono autori)", () => {
+  it("tra le parole vietate c'è sempre l'autore del concetto (tranne nelle carte su persone, istituzioni o concetti senza autore)", () => {
     const AUTHORS = [
       "Freud", "Anna Freud", "Jones", "Breuer", "Charcot", "Ferenczi", "Heimann", "Zetzel", "Greenson",
       "Klein", "Isaacs", "Bion", "Winnicott", "Bowlby", "Ainsworth", "Kohut", "Lacan", "Jung", "Hartmann",
+      "Kernberg", "Erikson", "Willi", "Torok", "Jacobs", "Ogden", "Bick", "Blos",
     ];
-    const PERSON_CARDS = [27, 28, 29, 30, 59, 60, 61, 62, 63, 64];
+    const PERSON_CARDS = [27, 28, 29, 30, 59, 61, 62, 63, 64];
+    const INSTITUTION_CARDS = [25];
+    // Drop-out, Seduttività, Adolescenza, Psicoterapia, Insight, Diagnosi, Narcisismo del terapeuta, Self-disclosure
+    const NO_AUTHOR_CARDS = [7, 12, 21, 40, 42, 54, 83, 91];
+    const exempt = [...PERSON_CARDS, ...INSTITUTION_CARDS, ...NO_AUTHOR_CARDS];
     const missing = CARDS.filter(
-      (c) => !PERSON_CARDS.includes(c.id) && !c.vietate.some((v) => AUTHORS.includes(v)),
+      (c) => !exempt.includes(c.id) && !c.vietate.some((v) => AUTHORS.includes(v)),
     ).map((c) => `${c.id} ${c.parola}`);
     expect(missing).toEqual([]);
   });
@@ -45,8 +50,16 @@ describe("cards.json", () => {
     expect(new Set(CARDS.map((c) => c.area))).toEqual(new Set(AREAS));
   });
 
-  it("i rimandi interni («carta 43», «carta 77») puntano alle carte giuste", () => {
-    expect(cardById(43).parola).toBe("Diniego");
-    expect(cardById(77).parola).toBe("Holding");
+  it("i rimandi interni («carta 39», «carta 77»…) puntano alle carte giuste", () => {
+    const refs: Record<number, string> = {
+      13: "Acting out",
+      25: "Area G",
+      39: "Borderline",
+      77: "Holding",
+      92: "Rêverie",
+    };
+    for (const [id, parola] of Object.entries(refs)) expect(cardById(Number(id)).parola).toBe(parola);
+    const cited = new Set(CARDS.flatMap((c) => [...c.spiegazione.matchAll(/carta (\d+)/g)].map((m) => Number(m[1]))));
+    expect([...cited].sort((a, b) => a - b)).toEqual(Object.keys(refs).map(Number));
   });
 });
