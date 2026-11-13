@@ -215,7 +215,7 @@ function renderPlaying(): void {
       <div class="actions">
         <button class="btn-ok btn-big" data-r="ok">Indovinata <small>${signed(cardPoints(c, weighted))}</small></button>
         <button class="btn-bad btn-big" data-r="taboo">Tabù! <small>${signed(TABOO_PENALTY)}</small></button>
-        <button class="btn-big" data-r="pass">Passo <small>${signed(PASS_PENALTY)}</small></button>
+        <button class="btn-big" data-r="pass">Passo${PASS_PENALTY ? ` <small>${signed(PASS_PENALTY)}</small>` : ""}</button>
       </div>
       <div class="lastplay">
         <button id="gUndo" ${last ? "" : "disabled"}>Annulla l'ultima</button>
@@ -258,7 +258,7 @@ function resolve(outcome: LiveOutcome): void {
 }
 
 function playBadge(p: Play): string {
-  const kind = p.outcome === "ok" ? "ok" : p.outcome === "time" ? "neutral" : "bad";
+  const kind = p.delta > 0 ? "ok" : p.delta < 0 ? "bad" : "neutral";
   return `<span class="badge ${kind}">${OUTCOME_LABELS[p.outcome]} ${signed(p.delta)}</span>`;
 }
 

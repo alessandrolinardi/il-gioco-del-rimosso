@@ -119,17 +119,17 @@ describe("punteggio", () => {
     expect(scores(s)).toEqual([points, 0]);
   });
 
-  it("il tabù costa 2 punti e la carta esce dal gioco", () => {
+  it("il tabù costa 1 punto e la carta esce dal gioco", () => {
     const s = resolveCard(startTurn(game(), NOW), "taboo", DURING);
-    expect(TABOO_PENALTY).toBe(-2);
-    expect(scores(s)).toEqual([-2, 0]);
+    expect(TABOO_PENALTY).toBe(-1);
+    expect(scores(s)).toEqual([-1, 0]);
     expect(s.deck).not.toContain(1);
   });
 
-  it("il passo costa 1 punto e la carta torna in fondo al mazzo", () => {
+  it("il passo non costa punti e la carta torna in fondo al mazzo", () => {
     const s = resolveCard(startTurn(game(), NOW), "pass", DURING);
-    expect(PASS_PENALTY).toBe(-1);
-    expect(scores(s)).toEqual([-1, 0]);
+    expect(PASS_PENALTY).toBe(0);
+    expect(scores(s)).toEqual([0, 0]);
     expect(s.cardId).toBe(2);
     expect(s.deck).toEqual([1, 6, 5, 4, 3]);
   });
@@ -138,7 +138,7 @@ describe("punteggio", () => {
     let s = startTurn(game({ weighted: true }, [HARD + 1, HARD]), NOW);
     s = resolveCard(s, "taboo", DURING);
     s = resolveCard(s, "pass", DURING);
-    expect(scores(s)).toEqual([-3, 0]);
+    expect(scores(s)).toEqual([-1, 0]);
   });
 
   it("se si passa l'ultima carta del mazzo il turno si chiude e la carta resta per la squadra dopo", () => {
@@ -162,7 +162,7 @@ describe("annullare l'ultimo esito durante il turno", () => {
     expect(s.endAt).toBe(NOW + TURN_MS);
   });
 
-  it("annullare un passo restituisce il punto e toglie la carta dal fondo del mazzo", () => {
+  it("annullare un passo rimette in mano la carta e la toglie dal fondo del mazzo", () => {
     let s = resolveCard(startTurn(game(), NOW), "pass", DURING);
     s = undoLast(s);
     expect(scores(s)).toEqual([0, 0]);
@@ -170,8 +170,9 @@ describe("annullare l'ultimo esito durante il turno", () => {
     expect(s.deck).toEqual([6, 5, 4, 3, 2]);
   });
 
-  it("dopo l'annullamento si può dare un esito diverso", () => {
+  it("annullare un tabù restituisce il punto e permette un esito diverso", () => {
     let s = resolveCard(startTurn(game(), NOW), "taboo", DURING);
+    expect(scores(undoLast(s))).toEqual([0, 0]);
     s = resolveCard(undoLast(s), "ok", DURING);
     expect(scores(s)).toEqual([1, 0]);
   });
@@ -188,7 +189,7 @@ describe("correzioni nel riepilogo", () => {
     s = resolveCard(s, "taboo", DURING);
     s = resolveCard(s, "ok", DURING);
     s = expireTurn(s);
-    expect(scores(s)).toEqual([-1, 0]);
+    expect(scores(s)).toEqual([0, 0]);
     s = changeOutcome(s, 0, "ok");
     expect(scores(s)).toEqual([2, 0]);
     expect(turnTotal(s)).toBe(2);
@@ -206,7 +207,7 @@ describe("correzioni nel riepilogo", () => {
     let s = startTurn(game(), NOW);
     s = expireTurn(resolveCard(s, "ok", DURING));
     s = changeOutcome(s, 0, "pass");
-    expect(scores(s)).toEqual([-1, 0]);
+    expect(scores(s)).toEqual([0, 0]);
     expect(s.deck.slice(0, 2).sort()).toEqual([1, 2]);
   });
 

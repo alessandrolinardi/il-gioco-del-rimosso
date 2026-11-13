@@ -59,7 +59,7 @@ button:disabled:hover{border-color:var(--line)}
 .play-head strong{font-family:var(--f-display);font-weight:400;font-size:1.25rem;line-height:1.15;min-width:0}
 .play .pts{margin-left:auto;font-family:var(--f-mono);font-variant-numeric:tabular-nums;color:var(--muted)}
 .play.ok .pts{color:var(--ok)}
-.play.taboo .pts,.play.pass .pts{color:var(--bad)}
+.play.taboo .pts{color:var(--bad)}
 .play-outcome select{width:auto;padding:6px 10px}
 .play details{grid-column:1 / -1;font-size:.9rem}
 .play summary{cursor:pointer;color:var(--muted);font-size:.8rem}

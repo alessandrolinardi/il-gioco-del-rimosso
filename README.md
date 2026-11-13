@@ -10,7 +10,7 @@ backend. Si installa sul telefono come app (PWA) e funziona anche offline.
 - **Turno a tempo.** Ogni squadra ha 60 secondi per indovinare più carte possibile; allo scadere il
   dispositivo passa alla squadra successiva. Un avversario fa da controllore e preme *Tabù!*.
 - **Punti.** +1 per carta indovinata (con il punteggio pesato: facile +1, intermedia +2, difficile
-  +3), −2 per un tabù, −1 per un passo. La carta in mano allo scadere vale 0. Carte passate e
+  +3), −1 per un tabù; passare non costa punti, e la carta in mano allo scadere vale 0. Carte passate e
   rimaste in mano tornano in fondo al mazzo; quelle bruciate escono dal gioco.
 - **Più difficile.** Sei parole vietate per carta; vietati anche parti della parola, traduzioni,
   rime, gesti, titoli di opere, nomi di casi clinici e date; vale solo la parola esatta.
@@ -53,7 +53,7 @@ npm test
 ```
 
 I test (Vitest) coprono la logica di gioco: turno a tempo con più carte, punteggio normale e pesato,
-penalità di tabù (−2) e passo (−1), carte passate che tornano in fondo al mazzo, annullamento
+penalità del tabù (−1), passo senza penalità, carte passate che tornano in fondo al mazzo, annullamento
 dell'ultimo esito, correzioni nel riepilogo, fine partita solo a giro completo, pareggio, timer,
 salvataggio e i conteggi del mazzo (100 carte: 30 facili, 40 intermedie, 30 difficili, sei parole
 vietate ciascuna). Con `npm run test:watch` i test ripartono a ogni modifica.

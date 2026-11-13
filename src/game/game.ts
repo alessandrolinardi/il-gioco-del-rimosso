@@ -54,8 +54,8 @@ export interface GameState {
 export const TEAM_COUNTS = [2, 3, 4] as const;
 export const MIN_TARGET = 5;
 export const DEFAULT_TARGET = 25;
-export const TABOO_PENALTY = -2;
-export const PASS_PENALTY = -1;
+export const TABOO_PENALTY = -1;
+export const PASS_PENALTY = 0;
 
 export const DEFAULT_SETTINGS: Settings = {
   nTeams: 2,
