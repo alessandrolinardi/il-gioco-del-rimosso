@@ -131,8 +131,9 @@ del tipo «(carta 39)» nelle spiegazioni puntino alla carta giusta.
 - **Salvataggio**: la partita in corso resta nel browser di quel dispositivo. Se si ricarica la
   pagina durante un turno, il turno riprende con il tempo che restava; se nel frattempo è scaduto, si
   passa al riepilogo del turno.
-- **Aggiornamenti**: dopo una nuova pubblicazione, l'app installata si aggiorna da sola e mostra la
-  nuova versione all'apertura successiva.
+- **Aggiornamenti**: dopo una nuova pubblicazione l'app, anche installata, scarica la nuova versione
+  all'apertura o quando torna in primo piano, e si ricarica da sola dopo pochi secondi. Una partita
+  in corso riprende dal punto in cui era.
 
 ## Licenza
 
