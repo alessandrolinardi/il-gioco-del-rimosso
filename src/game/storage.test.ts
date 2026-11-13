@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { CARDS } from "../data/cards";
-import { DEFAULT_SETTINGS, newSetup, resolveCard, showCard, startGame } from "./game";
+import { DEFAULT_SETTINGS, expireTurn, newSetup, resolveCard, startGame, startTurn } from "./game";
 import { loadGame, loadPref, saveGame } from "./storage";
 
 function memoryStore() {
@@ -13,11 +13,14 @@ function memoryStore() {
 }
 
 describe("salvataggio", () => {
-  it("salva e ricarica una partita in corso", () => {
+  it("salva e ricarica un turno in corso e il riepilogo di fine turno", () => {
     const store = memoryStore();
-    const s = resolveCard(showCard(startGame(DEFAULT_SETTINGS, CARDS), 0), "ok", 1_000);
-    saveGame(s, store);
-    expect(loadGame(store)).toEqual(s);
+    const playing = resolveCard(startTurn(startGame(DEFAULT_SETTINGS, CARDS), 0), "ok", 1_000);
+    saveGame(playing, store);
+    expect(loadGame(store)).toEqual(playing);
+    const summary = expireTurn(playing);
+    saveGame(summary, store);
+    expect(loadGame(store)).toEqual(summary);
   });
 
   it("salva e ricarica la schermata iniziale", () => {
@@ -28,12 +31,14 @@ describe("salvataggio", () => {
 
   it("ignora dati rovinati o di forma sconosciuta", () => {
     const store = memoryStore();
-    store.setItem("rimosso-game-v2", "{non è json");
+    store.setItem("rimosso-game-v3", "{non è json");
     expect(loadGame(store)).toBeNull();
-    store.setItem("rimosso-game-v2", JSON.stringify({ phase: "playing", teams: [] }));
+    store.setItem("rimosso-game-v3", JSON.stringify({ phase: "playing", teams: [] }));
     expect(loadGame(store)).toBeNull();
     const s = startGame(DEFAULT_SETTINGS, CARDS);
-    store.setItem("rimosso-game-v2", JSON.stringify({ ...s, deck: [999] }));
+    store.setItem("rimosso-game-v3", JSON.stringify({ ...s, deck: [999] }));
+    expect(loadGame(store)).toBeNull();
+    store.setItem("rimosso-game-v3", JSON.stringify({ ...s, plays: [{ cardId: 1, outcome: "boh", delta: 0 }] }));
     expect(loadGame(store)).toBeNull();
   });
 

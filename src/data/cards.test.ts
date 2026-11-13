@@ -17,13 +17,15 @@ describe("cards.json", () => {
     });
   });
 
-  it("ogni carta ha parola, 4 o 5 parole vietate diverse, un'area nota e una spiegazione", () => {
+  it("ogni carta ha parola, 6 parole vietate diverse, un'area nota e una spiegazione", () => {
     for (const c of CARDS) {
       expect(c.parola.trim()).not.toBe("");
-      expect(c.vietate.length).toBeGreaterThanOrEqual(4);
-      expect(c.vietate.length).toBeLessThanOrEqual(5);
-      expect(new Set(c.vietate).size).toBe(c.vietate.length);
-      c.vietate.forEach((v) => expect(v.trim()).not.toBe(""));
+      expect(c.vietate, c.parola).toHaveLength(6);
+      expect(new Set(c.vietate.map((v) => v.toLowerCase())).size, c.parola).toBe(6);
+      c.vietate.forEach((v) => {
+        expect(v.trim()).not.toBe("");
+        expect(v.toLowerCase(), c.parola).not.toBe(c.parola.toLowerCase());
+      });
       expect(AREAS).toContain(c.area);
       expect(c.spiegazione.length).toBeGreaterThan(40);
     }

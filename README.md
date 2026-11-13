@@ -1,8 +1,23 @@
 # Il Gioco del Rimosso
 
-Il gioco delle parole proibite della psicoanalisi: 100 carte su concetti, autori e meccanismi di difesa, con partita a squadre
-e timer da 60 secondi, regolamento e soluzioni commentate. È una webapp statica, senza login né
+Il gioco delle parole proibite della psicoanalisi: 100 carte su concetti, autori e meccanismi di difesa, ciascuna con sei
+parole vietate. Si gioca a squadre: in un turno di 60 secondi si indovinano più carte possibile, poi il turno passa
+all'altra squadra. Ci sono anche regolamento e soluzioni commentate. È una webapp statica, senza login né
 backend. Si installa sul telefono come app (PWA) e funziona anche offline.
+
+## Le regole in breve
+
+- **Turno a tempo.** Ogni squadra ha 60 secondi per indovinare più carte possibile; allo scadere il
+  dispositivo passa alla squadra successiva. Un avversario fa da controllore e preme *Tabù!*.
+- **Punti.** +1 per carta indovinata (con il punteggio pesato: facile +1, intermedia +2, difficile
+  +3), −2 per un tabù, −1 per un passo. La carta in mano allo scadere vale 0. Carte passate e
+  rimaste in mano tornano in fondo al mazzo; quelle bruciate escono dal gioco.
+- **Più difficile.** Sei parole vietate per carta; vietati anche parti della parola, traduzioni,
+  rime, gesti, titoli di opere, nomi di casi clinici e date; vale solo la parola esatta.
+- **Correzioni.** Durante il turno *Annulla l'ultima* corregge un tocco sbagliato senza fermare il
+  tempo; a fine turno il riepilogo permette di cambiare l'esito di ogni carta.
+- **Vittoria.** Vince chi raggiunge l'obiettivo (25 punti di default) a fine giro completo; con la
+  parità si gioca un altro giro.
 
 ## Requisiti
 
@@ -37,9 +52,11 @@ npm run preview
 npm test
 ```
 
-I test (Vitest) coprono la logica di gioco: punteggio normale e pesato, fine partita solo a giro
-completo, pareggio, annullamento dell'esito, timer, salvataggio e i conteggi del mazzo (100 carte:
-30 facili, 40 intermedie, 30 difficili). Con `npm run test:watch` i test ripartono a ogni modifica.
+I test (Vitest) coprono la logica di gioco: turno a tempo con più carte, punteggio normale e pesato,
+penalità di tabù (−2) e passo (−1), carte passate che tornano in fondo al mazzo, annullamento
+dell'ultimo esito, correzioni nel riepilogo, fine partita solo a giro completo, pareggio, timer,
+salvataggio e i conteggi del mazzo (100 carte: 30 facili, 40 intermedie, 30 difficili, sei parole
+vietate ciascuna). Con `npm run test:watch` i test ripartono a ogni modifica.
 
 ## Pubblicare su GitHub Pages
 
@@ -76,11 +93,11 @@ public/icon.svg          icona (una carta stilizzata): da qui la build genera tu
 src/
   main.ts                avvio dell'app
   data/
-    cards.json           le 100 carte: id, parola, vietate, livello (1–3), area, spiegazione
+    cards.json           le 100 carte: id, parola, 6 vietate, livello (1–3), area, spiegazione
     cards.ts, areas.ts   tipi, etichette dei livelli, ordine delle aree
   game/                  logica pura, senza accesso alla pagina (testata)
     deck.ts              mazzo e mescolamento
-    game.ts              turni, punteggio, fine partita, pareggio, annullamento
+    game.ts              turni a tempo, punteggio, riepilogo, fine partita, pareggio, annullamento
     timer.ts             conto alla rovescia, avviso a 10 secondi
     storage.ts           salvataggio nel browser
   ui/                    disegno delle quattro sezioni, tema, preferenze
@@ -93,8 +110,8 @@ pwa-assets.config.ts     icone generate
 ### Modificare le carte
 
 Le carte sono in [`src/data/cards.json`](src/data/cards.json). Dopo una modifica lancia `npm test`:
-un test controlla che ci siano 100 carte con la divisione 30/40/30, quattro o cinque parole vietate
-per carta e solo le otto aree previste. Controlla anche una regola del gioco: tra le parole vietate
+un test controlla che ci siano 100 carte con la divisione 30/40/30, esattamente sei parole vietate
+diverse per carta e solo le otto aree previste. Controlla anche una regola del gioco: tra le parole vietate
 c'è sempre l'autore del concetto (Freud, Klein, Winnicott…), tranne nelle carte che sono esse stesse
 autori o istituzioni e nei concetti senza un autore riconosciuto (per esempio Drop-out o Diagnosi);
 queste eccezioni sono elencate nel test. Se cambi apposta la composizione del mazzo, aggiorna anche
@@ -112,7 +129,8 @@ del tipo «(carta 39)» nelle spiegazioni puntino alla carta giusta.
 - **Schermo acceso** durante il turno (Wake Lock), dove il browser lo consente.
 - **Tema** automatico, chiaro o scuro: si cambia con l'icona in alto a destra.
 - **Salvataggio**: la partita in corso resta nel browser di quel dispositivo. Se si ricarica la
-  pagina durante un turno, la carta torna in fondo al mazzo e si riparte da «Mostra la carta».
+  pagina durante un turno, il turno riprende con il tempo che restava; se nel frattempo è scaduto, si
+  passa al riepilogo del turno.
 - **Aggiornamenti**: dopo una nuova pubblicazione, l'app installata si aggiorna da sola e mostra la
   nuova versione all'apertura successiva.
 

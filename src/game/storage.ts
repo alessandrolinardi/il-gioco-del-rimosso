@@ -1,5 +1,5 @@
 import { CARDS } from "../data/cards";
-import type { GameState, Phase } from "./game";
+import type { GameState, Outcome, Phase } from "./game";
 
 /*
  * Salvataggio nel browser (localStorage). Ogni accesso è protetto: in navigazione
@@ -8,8 +8,9 @@ import type { GameState, Phase } from "./game";
 
 type KeyValueStore = Pick<Storage, "getItem" | "setItem">;
 
-const GAME_KEY = "rimosso-game-v2";
-const PHASES: readonly Phase[] = ["setup", "ready", "playing", "result", "end"];
+const GAME_KEY = "rimosso-game-v3";
+const PHASES: readonly Phase[] = ["setup", "ready", "playing", "summary", "end"];
+const OUTCOMES: readonly Outcome[] = ["ok", "taboo", "pass", "time"];
 const CARD_IDS = new Set(CARDS.map((c) => c.id));
 
 const defaultStore = (): KeyValueStore | undefined => {
@@ -79,7 +80,14 @@ function isGameState(v: unknown): v is GameState {
     s.deck.every(isCardId) &&
     isInt(s.turn) &&
     (s.cardId === null || isCardId(s.cardId)) &&
-    ((s.phase !== "playing" && s.phase !== "result") || s.cardId !== null) &&
-    (s.phase !== "result" || (!!s.last && typeof s.last === "object"))
+    (s.phase !== "playing" || (s.cardId !== null && typeof s.endAt === "number")) &&
+    Array.isArray(s.plays) &&
+    s.plays.every(isPlay)
   );
+}
+
+function isPlay(v: unknown): boolean {
+  if (!v || typeof v !== "object") return false;
+  const p = v as Record<string, unknown>;
+  return isCardId(p.cardId) && OUTCOMES.includes(p.outcome as Outcome) && isInt(p.delta);
 }

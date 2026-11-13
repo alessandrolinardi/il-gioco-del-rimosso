@@ -5,7 +5,7 @@ import { cardNo, esc } from "./dom";
 export function cardHTML(c: Card, big = false): string {
   return `<article class="tcard l${c.livello}${big ? " big" : ""}">
     <div class="band"><span>N. ${cardNo(c.id)}</span><span>${LEVEL_LABELS[c.livello]}</span></div>
-    <div class="word">${esc(c.parola)}</div>
+    <div class="word${c.parola.length > 22 ? " long" : ""}">${esc(c.parola)}</div>
     <ul aria-label="Parole vietate">${c.vietate.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>
     <div class="area">${esc(c.area)}</div></article>`;
 }
